@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Sparkles, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import logo from "/logo.png"; // adjust path if needed
 
 function Navbar() {
   const location = useLocation();
@@ -19,8 +20,12 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="bg-gradient-to-br from-rose-500 to-pink-500 p-2 rounded-lg group-hover:scale-110 transition-transform">
-              <Sparkles className="w-6 h-6 text-white" />
+            <div className="p-1 rounded-lg group-hover:scale-110 transition-transform">
+            <img 
+              src={logo} 
+              alt="The Glow Psychology Logo" 
+              className="w-12 h-12 object-cover rounded-full"
+            />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent">
             The Glow Psychology
