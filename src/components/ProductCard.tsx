@@ -67,6 +67,14 @@ function ProductCard({ product }: Props) {
           <div className="flex-grow" />
 
           <div className="mb-2">
+            <div className="flex items-baseline gap-2 mb-1">
+              <span className="text-sm text-gray-500 line-through">
+                {product.mrp}
+              </span>
+              <span className="text-sm font-semibold text-red-600">
+                -{product.discountPercentage}%
+              </span>
+            </div>
             <p className="text-2xl font-bold text-gray-900">
               {product.price}
             </p>

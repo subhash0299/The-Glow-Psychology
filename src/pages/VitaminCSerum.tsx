@@ -115,7 +115,15 @@ function VitaminCSerum() {
                     <td className="py-3 px-4 font-medium text-gray-900">{product.name}</td>
                     <td className="py-3 px-4 text-gray-600">{product.concentration || "10-20%"}</td>
                     <td className="py-3 px-4 text-gray-600">{product.skinType || "All Skin Types"}</td>
-                    <td className="py-3 px-4 text-gray-600 font-semibold">{product.price}</td>
+                    <td className="py-3 px-4">
+                      <div className="flex flex-col">
+                        <div className="flex items-center gap-2">
+                          <span className="text-sm text-gray-400 line-through">{product.mrp}</span>
+                          <span className="text-xs font-semibold text-red-600">-{product.discountPercentage}%</span>
+                        </div>
+                        <span className="text-gray-900 font-semibold">{product.price}</span>
+                      </div>
+                    </td>
                     <td className="py-3 px-4">
                       <div className="flex items-center gap-1">
                         <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
