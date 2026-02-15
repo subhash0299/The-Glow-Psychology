@@ -94,10 +94,10 @@ export const vitaminCSerums: Product[] = [
     name: "Minimalist 10% Vitamin C Serum for Dull Skin, Dark Spots & Uneven Tone Treatment",
     rating: "4.1 (20,548",
     price: "₹629",
-    images: ["serums/Minimalist/Minimalist-10%-Vitamin-C-Serum-1.png",
-      "serums/Minimalist/Minimalist-10%-Vitamin-C-Serum-2.png",
-      "serums/Minimalist/Minimalist-10%-Vitamin-C-Serum-3.png",
-      "serums/Minimalist/Minimalist-10%-Vitamin-C-Serum-4.png"
+    images: ["serums/Minimalist/Minimalist-10-Vitamin-C-Serum-1.png",
+      "serums/Minimalist/Minimalist-10-Vitamin-C-Serum-2.png",
+      "serums/Minimalist/Minimalist-10-Vitamin-C-Serum-3.png",
+      "serums/Minimalist/Minimalist-10-Vitamin-C-Serum-4.png"
     ], // TODO: Replace with actual Amazon product image URL
     link: "https://www.amazon.in/Minimalist-Vitamin-Glowing-Effective-Brightening/dp/B08MVBF4P8/ref=sr_1_5?crid=3E069AF3II76S&dib=eyJ2IjoiMSJ9.zJS7O29FplYxtMkwyQHH2jtK61Uu2FUKo_I2TZegoKgJr4HrIedvc0X7mIPMk-yJcX6drp_IihDRVWhIXInvcjbIWRrC38B9JIcDWShOI9uTUlHd7eV0gL8Z7PdL9nXBPT4yfS9y9bn5exaPuBXkFQxQQcrTphb3foQ-SFyr6D_bL7rtfVquIKUnyVkvLMXaVkHgPqQRR1_l3tVHmmksP8mP-vza6uNP6IAWWc9n515OUeVMry_No462BXBhS51t-d32pAjN1aoJLz51P90IbK9cqK9IGgy12PUwkzOFzR4.AoACGHbAWxPsAPrdKucqeRSqUrurd3dkP3X7xOV8P5I&dib_tag=se&keywords=Minimalist%2B10%25%2BVitamin%2BC%2BSerum&qid=1771130849&sprefix=aqualogica%2Bglow%2B%2Bsunscreen%2Caps%2C503&sr=8-5&th=1", // TODO: Replace with actual Amazon affiliate link
     features: ["10% Vitamin C", "Brightening", "Anti-aging"],
@@ -109,10 +109,10 @@ export const vitaminCSerums: Product[] = [
     name: "Plum 15% Vitamin C Advanced Serum for Glowing Skin | for Oily, Dry & Combination Skin",
     rating: "4.0 (14,428)",
     price: "₹439",
-    images: ["serums/Plum/Plum-15%-Vitamin-C-Advanced-Serum-1.png",
-      "serums/Plum/Plum-15%-Vitamin-C-Advanced-Serum-2.png",
-      "serums/Plum/Plum-15%-Vitamin-C-Advanced-Serum-3.png",
-      "serums/Plum/Plum-15%-Vitamin-C-Advanced-Serum-4.png"], // TODO: Replace with actual Amazon product image URL
+    images: ["serums/Plum/Plum-15-Vitamin-C-Advanced-Serum-1.png",
+      "serums/Plum/Plum-15-Vitamin-C-Advanced-Serum-2.png",
+      "serums/Plum/Plum-15-Vitamin-C-Advanced-Serum-3.png",
+      "serums/Plum/Plum-15-Vitamin-C-Advanced-Serum-4.png"], // TODO: Replace with actual Amazon product image URL
     link: "https://www.amazon.in/Plum-Combination-Pigmentation-Non-Irritating-Hydrating/dp/B095PRGHDX/ref=sr_1_5?crid=1BX67EEBYWHD9&dib=eyJ2IjoiMSJ9.RtuK-ztjgz-SGPSDGRVHb3T2kDr7cAnSw-0-hAdhWyFS7Ma1imA8nDNYs5YVk3VwW-AnLkw7yoXk-bW2dGzrQhUZcyWz3eXDXXBrfy0btVN1hGQpbQ94NKv0vUypoaOlgQF4yFdW5me4lur9ESXxzewWJy1ewdxxgnpogRAf_zyLnxIOl5vzowPkSXbi5y9M4W3R60_RMV2j-Afijm5-43Hmsn7DQgRZkuGvu7zjv8hvTR2DTDIiKpqX2rF7LWli3kpw-RU_s81B-Yn-orPIZ1Ntg9HN-_ETHvdIBQU5wIY.gAr1DT0rbjhBpachb9H2RtCn5eNYuZJdCM_6dOJV5hI&dib_tag=se&keywords=Plum%2B15%25%2BVitamin%2BC%2BSerum&qid=1771131306&sprefix=plum%2B15%25%2Bvitamin%2Bc%2Bserum%2Caps%2C405&sr=8-5&th=1", // TODO: Replace with actual Amazon affiliate link
     features: ["15% Vitamin C", "Kakadu plum", "Vegan"],
     bestFor: "Best for Oily Skin",
@@ -123,10 +123,10 @@ export const vitaminCSerums: Product[] = [
     name: "The Derma Co 10% Vitamin C Face Serum with 5% Niacinamide, Powered by Deep Penetration Formula",
     rating: "4.0 (13,675",
     price: "₹599",
-    images: ["serums/DermaCo/derma-co-10%-vitamin-c-serum-1.png",
-      "serums/DermaCo/derma-co-10%-vitamin-c-serum-2.png",
-      "serums/DermaCo/derma-co-10%-vitamin-c-serum-3.png",
-      "serums/DermaCo/derma-co-10%-vitamin-c-serum-4.png"], // TODO: Replace with actual Amazon product image URL
+    images: ["serums/DermaCo/derma-co-10-vitamin-c-serum-1.png",
+      "serums/DermaCo/derma-co-10-vitamin-c-serum-2.png",
+      "serums/DermaCo/derma-co-10-vitamin-c-serum-3.png",
+      "serums/DermaCo/derma-co-10-vitamin-c-serum-4.png"], // TODO: Replace with actual Amazon product image URL
     link: "https://www.amazon.in/Derma-Co-Niacinamide-Hyaluronic-Radiance/dp/B096MNYLWS/ref=sr_1_1_in_f3_0o_fs_sspa?crid=JDMRWQ8X8728&dib=eyJ2IjoiMSJ9.uyTk6TT9hdhFIhIiwgz4VBwLplV8q6QFFx1sNcqJcd-JKpD40gJ1qfD3w_KKp5Kpyh8-4L_DJRw6kkbrKjR0eHmH77NGWKzcR_TcK_FE-IW4gsGJXdXGijB7aFCkF-y0X7XdvWayqMBztOUvfaXbk-Sjc_hW8PHSzjerCjL9qz5wtVlVg47vrRcTzEZdMJpkH198S_2c5wK-dhiHhL6u7MGQHgVtfPP48A2s3F079g0cuTmGs0zX9xeeO5OW5Dl34ykNsgGZmIOWcLqdwkuHXLD646VXIOJ06VGCHGXKRCY.PV1CJxvbtn33QCk0v96o0dzWVUobZxs3AV_oipBXKGQ&dib_tag=se&keywords=Derma%2BCo%2B10%25%2BVitamin%2BC%2BSerum&qid=1771131634&sprefix=derma%2Bco%2B10%25%2Bvitamin%2Bc%2Bserum%2Caps%2C395&sr=8-1-spons&aref=mgpSNBIyff&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1", // TODO: Replace with actual Amazon affiliate link
     features: ["Glow boosting", "Dark spot reduction", "Dermatologist tested"],
     bestFor: "Best Budget Pick",
@@ -137,10 +137,10 @@ export const vitaminCSerums: Product[] = [
     name: "DOT & KEY 10% Vitamin C + E Serum with 5% Niacinamide,for Glowing Skin,Fades Dark Spots & Hyperpigmentation",
     rating: "4.1 (3,305",
     price: "₹429",
-    images: ["serums/Dot&Key/dot-key-10%-vitamin-c-e-serum-1.png",
-      "serums/Dot&Key/dot-key-10%-vitamin-c-e-serum-2.png",
-      "serums/Dot&Key/dot-key-10%-vitamin-c-e-serum-3.png",
-      "serums/Dot&Key/dot-key-10%-vitamin-c-e-serum-4.png"], // TODO: Replace with actual Amazon product image URL
+    images: ["serums/Dot&Key/dot-key-10-vitamin-c-e-serum-1.png",
+      "serums/Dot&Key/dot-key-10-vitamin-c-e-serum-2.png",
+      "serums/Dot&Key/dot-key-10-vitamin-c-e-serum-3.png",
+      "serums/Dot&Key/dot-key-10-vitamin-c-e-serum-4.png"], // TODO: Replace with actual Amazon product image URL
     link: "https://www.amazon.in/Vitamin-Niacinamide-Glowing-Fights-Pigmentation/dp/B0BCQ5RJH1/ref=sr_1_5?crid=1O6OT5YAYMC83&dib=eyJ2IjoiMSJ9.fKgXqmDtX2BlmYn1NoGzXBi8SQUp7soNNg-0aROJJV1rViHxx-rneuI_Eqs-5uCs1Lwnd9a9zXV5HQ0706MBLMFRojfjxuMJeEbTDWi0KpMudNV3wYeCSUDkVYPYozfERH-In7okP1N2VkA77L5_kZ0b-xfPVl0z-_fm4se2dI-h167GF__FF7t3HVWkfydthFNhbq99JcusDFxAipU3Gdwq57Y5rUh5NrCL1kz4VfQhiVB4oZl-pyc6VBxvVwykQg0qKPxCzkDSfRNxOViIanU5YLYv6fRPaoZUga46WHc.jOqtzfuacoyieCTMi7mqXlW5Y07VlTPaKYDBqc5K7G0&dib_tag=se&keywords=Dot%2B%26%2BKey%2BVitamin%2BC%2BSerum%2B20%25%2BVitamin%2BC&nsdOptOutParam=true&qid=1771131905&sprefix=dot%2B%26%2Bkey%2Bvitamin%2Bc%2Bserum%2B20%25%2Bvitamin%2Bc%2Caps%2C463&sr=8-5&th=1", // TODO: Replace with actual Amazon affiliate link
     features: ["10% Vitamin C", "Korean formula", "Fast absorbing"],
     bestFor: "Best for Sensitive Skin",
