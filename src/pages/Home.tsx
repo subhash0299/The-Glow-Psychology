@@ -291,7 +291,7 @@ function Home() {
         <div className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-8 mb-12 border-2 border-rose-100">
           <div className="text-center mb-8">
             <h3 className="text-3xl font-bold text-gray-900 mb-3">
-              Why You Don't Need to Search Amazon Anymore
+              Why You Don't Need to Search Online Anymore
             </h3>
             <p className="text-gray-600 max-w-3xl mx-auto text-lg">
               We've already done the hard work. Our team compares products, analyzes reviews, 
