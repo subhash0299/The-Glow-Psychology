@@ -146,14 +146,14 @@ function ProductCard({ product }: Props) {
 
       {/* MODAL */}
       {isOpen && (
-  <div
-    className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-2 sm:p-4"
-    onClick={() => setIsOpen(false)}
-  >
-    <div
-      className="relative max-w-4xl w-full bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 max-h-[95vh] overflow-y-auto"
-      onClick={(e) => e.stopPropagation()}
-    >
+      <div
+        className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-2 sm:p-4"
+        onClick={() => setIsOpen(false)}
+      >
+      <div
+        className="relative max-w-4xl w-full bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 max-h-[95vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
       {/* Close Button */}
       <button
         onClick={(e) => {
@@ -205,7 +205,7 @@ function ProductCard({ product }: Props) {
       </div>
 
       {/* THUMBNAILS */}
-      <div className="flex justify-center gap-2 sm:gap-3 flex-wrap">
+      <div className="flex justify-center gap-2 sm:gap-3 flex-wrap mb-4 sm:mb-5">
         {product.images.map((img, index) => (
           <img
             key={index}
@@ -219,6 +219,44 @@ function ProductCard({ product }: Props) {
             }`}
           />
         ))}
+      </div>
+
+      {/* PRODUCT DETAILS IN MODAL */}
+      <div className="mt-2 sm:mt-3 md:mt-4">
+        {product.brand && (
+          <p className="text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-1">
+            {product.brand}
+          </p>
+        )}
+        <h2 className="text-sm sm:text-lg md:text-xl font-semibold text-gray-900 mb-2">
+          {product.name}
+        </h2>
+
+        <div className="flex flex-wrap items-center gap-2 mb-3">
+          {product.bestFor && (
+            <span className="inline-block text-xs sm:text-sm font-medium bg-amber-100 text-amber-700 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full">
+              🏆 {product.bestFor}
+            </span>
+          )}
+          {product.skinType && (
+            <span className="inline-block text-xs sm:text-sm font-medium bg-blue-100 text-blue-700 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full">
+              Skin type: {product.skinType}
+            </span>
+          )}
+        </div>
+
+        {product.features && product.features.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-1">
+            {product.features.map((feature, index) => (
+              <span
+                key={index}
+                className="text-xs sm:text-sm bg-rose-50 text-rose-600 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full"
+              >
+                {feature}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   </div>

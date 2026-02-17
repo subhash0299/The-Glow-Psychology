@@ -10,7 +10,7 @@ function Navbar() {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/best-sunscreen-india', label: 'Sunscreen' },
-    { path: '/best-vitamin-c-serum-india', label: 'Vitamin C Serum' },
+    { path: '/best-vitamin-c-serum-india', label: 'Face Serum' },
     { path: '/best-face-cleanser-india', label: 'Face Wash' },
     { path: '/best-face-moisturizer-india', label: 'Moisturizer' },
     { path: '/best-face-toner-india', label: 'Toner' },

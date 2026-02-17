@@ -101,6 +101,163 @@ export const sunscreens: Product[] = [
     bestFor: "Best for Sensitive Skin",
     spf: "SPF 50 PA+++",
     skinType: "Sensitive Skin"
+  },
+  {
+    name: "Neutrogena UltraSheer Sunscreen SPF 50+ PA++++ | Blue Light Protect | No White Cast | Water Resistant | Ultra Light & Non Sticky | 80g",
+    brand: "Neutrogena",
+    rating: "4.2 (22,599)",
+    price: "₹518",
+    mrp: "₹785",
+    discountPercentage: 34,
+    images: [
+      "/sunscreen/Neutrogena/image.png",
+      "/sunscreen/Neutrogena/image copy.png",
+      "/sunscreen/Neutrogena/image copy 2.png",
+      "/sunscreen/Neutrogena/image copy 3.png",
+      "/sunscreen/Neutrogena/image copy 4.png"
+    ],
+    link: "https://amzn.to/4tO5CQb",
+    features: ["SPF 50+ PA++++", "Water Resistant", "Ultra Light"],
+    bestFor: "Best for Daily Use",
+    spf: "SPF 50+ PA++++",
+    skinType: "Oily, Dry & Sensitive Skin"
+  },
+  {
+    name: "Aqualogica Glow+ Dewy Sunscreen Gel SPF 50+ PA++++ | Papaya & Vitamin C | UVA/B & Blue Light Protection | No White Cast | 50g",
+    brand: "Aqualogica",
+    rating: "4.2 (19,106)",
+    price: "₹360",
+    mrp: "₹450",
+    discountPercentage: 20,
+    images: [
+      "/sunscreen/Aqualogica1/image.png",
+      "/sunscreen/Aqualogica1/image copy.png",
+      "/sunscreen/Aqualogica1/image copy 2.png",
+      "/sunscreen/Aqualogica1/image copy 3.png"
+    ],
+    link: "https://amzn.to/4aUZ76v",
+    features: ["SPF 50+ PA++++", "Vitamin C", "Dewy Finish"],
+    bestFor: "Best for Glow",
+    spf: "SPF 50+ PA++++",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "The Derma Co 1% Hyaluronic Sunscreen Aqua Gel SPF 50 PA++++ | Hydrating & Lightweight | No White Cast | 50g",
+    brand: "The Derma Co",
+    rating: "4.2 (34,989)",
+    price: "₹419",
+    mrp: "₹499",
+    discountPercentage: 16,
+    images: [
+      "/sunscreen/DermaCo1/image.png",
+      "/sunscreen/DermaCo1/image copy.png",
+      "/sunscreen/DermaCo1/image copy 2.png",
+      "/sunscreen/DermaCo1/image copy 3.png",
+      "/sunscreen/DermaCo1/image copy 4.png"
+    ],
+    link: "https://amzn.to/4rhpv0d",
+    features: ["SPF 50 PA++++", "Hyaluronic Acid", "Non-Greasy"],
+    bestFor: "Best for Hydration",
+    spf: "SPF 50 PA++++",
+    skinType: "Dry & Combination Skin"
+  },
+  {
+    name: "Dr. Sheth's Ceramide & Vitamin C Sunscreen SPF 50+ PA++++ | Brightening & Moisturizing | No White Cast | 50g",
+    brand: "Dr. Sheth's",
+    rating: "4.2 (13,261)",
+    price: "₹404",
+    mrp: "₹499",
+    discountPercentage: 19,
+    images: [
+      "/sunscreen/DrSheths/image.png",
+      "/sunscreen/DrSheths/image copy.png",
+      "/sunscreen/DrSheths/image copy 2.png",
+      "/sunscreen/DrSheths/image copy 3.png",
+      "/sunscreen/DrSheths/image copy 4.png"
+    ],
+    link: "https://amzn.to/4rymzw8",
+    features: ["SPF 50+ PA++++", "Ceramide", "Vitamin C"],
+    bestFor: "Best for Brightening",
+    spf: "SPF 50+ PA++++",
+    skinType: "Normal & Dry Skin"
+  },
+  {
+    name: "Deconstruct Gel Sunscreen SPF 50 PA++++ | 100% Photostable | Lightweight & Non-Greasy | 50g",
+    brand: "Deconstruct",
+    rating: "4.1 (10,822)",
+    price: "₹265",
+    mrp: "₹349",
+    discountPercentage: 24,
+    images: [
+      "/sunscreen/Deconstruct/image.png",
+      "/sunscreen/Deconstruct/image copy.png",
+      "/sunscreen/Deconstruct/image copy 2.png",
+      "/sunscreen/Deconstruct/image copy 3.png",
+      "/sunscreen/Deconstruct/image copy 4.png"
+    ],
+    link: "https://amzn.to/4qJHDyN",
+    features: ["SPF 50 PA++++", "Photostable", "Oil Control"],
+    bestFor: "Best for Oily Skin",
+    spf: "SPF 50 PA++++",
+    skinType: "Oily & Combination Skin"
+  },
+  {
+    name: "RE' EQUIL Ultra Matte Dry Touch Sunscreen SPF 50 PA++++ | Water & Sweat Resistant | Non-Comedogenic | 50g",
+    brand: "RE' EQUIL",
+    rating: "4.3 (8,822)",
+    price: "₹612",
+    mrp: "₹645",
+    discountPercentage: 5,
+    images: [
+      "/sunscreen/Reequil/image.png",
+      "/sunscreen/Reequil/image copy.png",
+      "/sunscreen/Reequil/image copy 2.png",
+      "/sunscreen/Reequil/image copy 3.png",
+      "/sunscreen/Reequil/image copy 4.png"
+    ],
+    link: "https://amzn.to/4aAODYx",
+    features: ["SPF 50 PA++++", "Matte Finish", "Sweat Resistant"],
+    bestFor: "Best for Outdoor Use",
+    spf: "SPF 50 PA++++",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "WishCare Niacinamide Oil Balance Fluid Sunscreen SPF 50 PA++++ | Matte & No White Cast | 8Hrs+ Protection | 50g",
+    brand: "WishCare",
+    rating: "4.5 (4,532)",
+    price: "₹379",
+    mrp: "₹499",
+    discountPercentage: 24,
+    images: [
+      "/sunscreen/WishCare/image.png",
+      "/sunscreen/WishCare/image copy.png",
+      "/sunscreen/WishCare/image copy 2.png",
+      "/sunscreen/WishCare/image copy 3.png"
+    ],
+    link: "https://amzn.to/400XoXj",
+    features: ["SPF 50 PA++++", "Niacinamide", "Oil Control"],
+    bestFor: "Best for Acne-Prone Skin",
+    spf: "SPF 50 PA++++",
+    skinType: "Oily, Sensitive & Combination Skin"
+  },
+  {
+    name: "Neutrogena Ultra Sheer Sunscreen SPF 50+ | Broad Spectrum UVA/UVB | Water Resistant | Ultra Light | 30g",
+    brand: "Neutrogena",
+    rating: "4.1 (62,460)",
+    price: "₹239",
+    mrp: "₹299",
+    discountPercentage: 20,
+    images: [
+      "/sunscreen/Neutrogena/image.png",
+      "/sunscreen/Neutrogena/image copy.png",
+      "/sunscreen/Neutrogena/image copy 2.png",
+      "/sunscreen/Neutrogena/image copy 3.png"
+    ],
+    link: "https://amzn.to/4qMXWe9",
+    features: ["SPF 50+", "Water Resistant", "Non-Sticky"],
+    bestFor: "Best Budget Pick",
+    spf: "SPF 50+",
+    skinType: "All Skin Types"
   }
 ];
 
@@ -173,6 +330,164 @@ export const vitaminCSerums: Product[] = [
     bestFor: "Best for Sensitive Skin",
     skinType: "Sensitive Skin",
     concentration: "10%"
+  },
+  {
+    name: "Garnier Vitamin C Face Serum | 2% Niacinamide & 0.5% Salicylic Acid | Brightening & Anti-Dark Spots | 30ml",
+    brand: "Garnier",
+    rating: "4.0 (42,932)",
+    price: "₹365",
+    mrp: "₹619",
+    discountPercentage: 41,
+    images: [
+      "/serums/Garnier/image.png",
+      "/serums/Garnier/image copy.png",
+      "/serums/Garnier/image copy 2.png",
+      "/serums/Garnier/image copy 3.png",
+      "/serums/Garnier/image copy 4.png"
+    ],
+    link: "https://amzn.to/4rZq4fe",
+    features: ["Vitamin C", "2% Niacinamide", "0.5% Salicylic Acid"],
+    bestFor: "Best for Dark Spots",
+    skinType: "All Skin Types",
+    concentration: "2% Niacinamide + 0.5% BHA"
+  },
+  {
+    name: "Minimalist 2% Salicylic Acid Face Serum | Anti-Acne & Oil Control | BHA Exfoliant | 10ml",
+    brand: "Minimalist",
+    rating: "4.2 (24,336)",
+    price: "₹235",
+    mrp: "₹250",
+    discountPercentage: 6,
+    images: [
+      "/serums/Minimalist1/image.png",
+      "/serums/Minimalist1/image copy.png",
+      "/serums/Minimalist1/image copy 2.png",
+      "/serums/Minimalist1/image copy 3.png"
+    ],
+    link: "https://amzn.to/4tHK5Z4",
+    features: ["2% Salicylic Acid", "Oil Control", "BHA Based"],
+    bestFor: "Best for Acne",
+    skinType: "All Skin Types",
+    concentration: "2%"
+  },
+  {
+    name: "Minimalist 10% Niacinamide Face Serum with Zinc | Oil Control & Pore Care | 30ml",
+    brand: "Minimalist",
+    rating: "4.2 (23,267)",
+    price: "₹512",
+    mrp: "₹602",
+    discountPercentage: 15,
+    images: [
+      "/serums/Minimalist2/image.png",
+      "/serums/Minimalist2/image copy.png",
+      "/serums/Minimalist2/image copy 2.png",
+      "/serums/Minimalist2/image copy 3.png"
+    ],
+    link: "https://amzn.to/4rsNkSQ",
+    features: ["10% Niacinamide", "Zinc", "Oil Control"],
+    bestFor: "Best for Oil Control",
+    skinType: "All Skin Types",
+    concentration: "10%"
+  },
+  {
+    name: "Aveeno Calm + Restore Triple Oat Serum | Soothing & Hydrating | 30ml",
+    brand: "Aveeno",
+    rating: "4.4 (4,597)",
+    price: "₹911",
+    mrp: "₹1001",
+    discountPercentage: 9,
+    images: [
+      "/serums/Aveeno/image.png",
+      "/serums/Aveeno/image copy.png",
+      "/serums/Aveeno/image copy 2.png",
+      "/serums/Aveeno/image copy 3.png",
+      "/serums/Aveeno/image copy 4.png"
+    ],
+    link: "https://amzn.to/3ZDaXMi",
+    features: ["Triple Oat", "Calming", "Hydrating"],
+    bestFor: "Best for Sensitive Skin",
+    skinType: "Sensitive & Dry Skin",
+    concentration: "Oat Complex"
+  },
+  {
+    name: "Asaya Advanced Spot Pigmentation Serum | Niacinamide & Alpha Arbutin | 30ml",
+    brand: "Asaya",
+    rating: "4.4 (2,598)",
+    price: "₹675",
+    mrp: "₹804",
+    discountPercentage: 16,
+    images: [
+      "/serums/Asaya/image.png",
+      "/serums/Asaya/image copy.png",
+      "/serums/Asaya/image copy 2.png",
+      "/serums/Asaya/image copy 3.png",
+      "/serums/Asaya/image copy 4.png"
+    ],
+    link: "https://amzn.to/4s1lfSB",
+    features: ["Niacinamide", "Alpha Arbutin", "Pigmentation Care"],
+    bestFor: "Best for Hyperpigmentation",
+    skinType: "All Skin Types",
+    concentration: "Niacinamide + Alpha Arbutin"
+  },
+  {
+    name: "Plum 10% Niacinamide Serum with Rice Water | Oil Control & Brightening | 30ml",
+    brand: "Plum",
+    rating: "4.1 (8,533)",
+    price: "₹559",
+    mrp: "₹649",
+    discountPercentage: 14,
+    images: [
+      "/serums/Plum1/image.png",
+      "/serums/Plum1/image copy.png",
+      "/serums/Plum1/image copy 2.png",
+      "/serums/Plum1/image copy 3.png",
+      "/serums/Plum1/image copy 4.png"
+    ],
+    link: "https://amzn.to/4sgBZFF",
+    features: ["10% Niacinamide", "Rice Water", "Oil Control"],
+    bestFor: "Best for Acne-Prone Skin",
+    skinType: "Oily & Combination Skin",
+    concentration: "10%"
+  },
+  {
+    name: "Minimalist 2% Alpha Arbutin Serum | Dark Spots & Hyperpigmentation | 10ml",
+    brand: "Minimalist",
+    rating: "4.0 (16,111)",
+    price: "₹236",
+    mrp: "₹249",
+    discountPercentage: 5,
+    images: [
+      "/serums/Minimalist3/image.png",
+      "/serums/Minimalist3/image copy.png",
+      "/serums/Minimalist3/image copy 2.png",
+      "/serums/Minimalist3/image copy 3.png",
+      "/serums/Minimalist3/image copy 4.png"
+    ],
+    link: "https://amzn.to/3ZGPgLq",
+    features: ["2% Alpha Arbutin", "Dark Spot Removal", "Fragrance-Free"],
+    bestFor: "Best for Pigmentation",
+    skinType: "All Skin Types",
+    concentration: "2%"
+  },
+  {
+    name: "Pilgrim 10% Vitamin C Face Serum | Brightening & Dark Spot Reduction | 10ml",
+    brand: "Pilgrim",
+    rating: "4.0 (4,202)",
+    price: "₹232",
+    mrp: "₹299",
+    discountPercentage: 22,
+    images: [
+      "/serums/Pilgrim/image.png",
+      "/serums/Pilgrim/image copy.png",
+      "/serums/Pilgrim/image copy 2.png",
+      "/serums/Pilgrim/image copy 3.png",
+      "/serums/Pilgrim/image copy 4.png"
+    ],
+    link: "https://amzn.to/4anjcSN",
+    features: ["10% Vitamin C", "Brightening", "Fragrance-Free"],
+    bestFor: "Best Budget Vitamin C",
+    skinType: "All Skin Types",
+    concentration: "10%"
   }
 ];
 
@@ -244,7 +559,153 @@ export const moisturizers: Product[] = [
     features: ["Hyaluronic acid", "Water gel formula", "Fast absorbing"],
     bestFor: "Best Hydrating",
     skinType: "All Skin Types"
+  },
+  {
+    name: "Dot & Key Barrier Repair Moisturizer | 5 Ceramides & Hyaluronic | 120 Hrs Moisturization | 100g",
+    brand: "Dot & Key",
+    rating: "4.3 (12,275)",
+    price: "₹335",
+    mrp: "₹394",
+    discountPercentage: 15,
+    images: [
+      "/mosturiser/DotAndKey/image.png",
+      "/mosturiser/DotAndKey/image copy.png",
+      "/mosturiser/DotAndKey/image copy 2.png",
+      "/mosturiser/DotAndKey/image copy 3.png"
+    ],
+    link: "https://amzn.to/4tCnPjD",
+    features: ["5 Ceramides", "Barrier Repair", "Non-Comedogenic"],
+    bestFor: "Best for Barrier Repair",
+    skinType: "Normal, Dry & Sensitive Skin"
+  },
+  {
+    name: "Minimalist Barrier Repair Face Moisturizer with Vitamin B12 Complex 5.5% | Ceramides | Lightweight Gel | 50g",
+    brand: "Minimalist",
+    rating: "4.3 (725)",
+    price: "₹379",
+    mrp: "₹399",
+    discountPercentage: 5,
+    images: [
+      "/mosturiser/Minimalist1/image.png",
+      "/mosturiser/Minimalist1/image copy.png",
+      "/mosturiser/Minimalist1/image copy 2.png",
+      "/mosturiser/Minimalist1/image copy 3.png",
+      "/mosturiser/Minimalist1/image copy 4.png"
+    ],
+    link: "https://amzn.to/4rmDOk5",
+    features: ["5.5% Vitamin B12 Complex", "Ceramides", "Lightweight Gel"],
+    bestFor: "Best for Barrier Strengthening",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "RE' EQUIL Ceramide & Hyaluronic Acid Moisturiser | Barrier Repair Cream | 100g",
+    brand: "RE' EQUIL",
+    rating: "4.3 (8,455)",
+    price: "₹266",
+    mrp: "₹295",
+    discountPercentage: 10,
+    images: [
+      "/mosturiser/Reequil/image.png",
+      "/mosturiser/Reequil/image copy.png",
+      "/mosturiser/Reequil/image copy 2.png",
+      "/mosturiser/Reequil/image copy 3.png",
+      "/mosturiser/Reequil/image copy 4.png"
+    ],
+    link: "https://amzn.to/4cA6Vfb",
+    features: ["Ceramides", "Hyaluronic Acid", "Long Lasting Hydration"],
+    bestFor: "Best for Normal to Dry Skin",
+    skinType: "Normal & Dry Skin"
+  },
+  {
+    name: "Cetaphil Moisturising Lotion | 48H Hydration | Fragrance-Free & Non-Greasy | 118ml",
+    brand: "Cetaphil",
+    rating: "4.3 (16,750)",
+    price: "₹654",
+    mrp: "₹788",
+    discountPercentage: 17,
+    images: [
+      "/mosturiser/Cetaphil1/image.png",
+      "/mosturiser/Cetaphil1/image copy.png",
+      "/mosturiser/Cetaphil1/image copy 2.png",
+      "/mosturiser/Cetaphil1/image copy 3.png"
+    ],
+    link: "https://amzn.to/3OoiVq8",
+    features: ["Niacinamide", "Panthenol", "Fragrance-Free"],
+    bestFor: "Best Lightweight Lotion",
+    skinType: "Dry to Normal & Sensitive Skin"
+  },
+  {
+    name: "Pilgrim Korean Rice Water Hydra Glow Moisturizer | 5 Hyaluronic Acids & 5 Ceramides | 100g",
+    brand: "Pilgrim",
+    rating: "4.2 (1,564)",
+    price: "₹299",
+    mrp: "₹394",
+    discountPercentage: 24,
+    images: [
+      "/mosturiser/Pilgrim/image.png",
+      "/mosturiser/Pilgrim/image copy.png",
+      "/mosturiser/Pilgrim/image copy 2.png",
+      "/mosturiser/Pilgrim/image copy 3.png"
+    ],
+    link: "https://amzn.to/4bVzvaH",
+    features: ["Rice Water", "5 Ceramides", "Oil-Free Gel"],
+    bestFor: "Best for Glass Skin",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "DAM Daily Advance Ultra Hydrating Lotion | Shea Butter | 30g",
+    brand: "Cetaphil",
+    rating: "4.3 (15,220)",
+    price: "₹231",
+    mrp: "₹279",
+    discountPercentage: 17,
+    images: [
+      "/mosturiser/Cetaphil2/image.png",
+      "/mosturiser/Cetaphil2/image copy.png",
+      "/mosturiser/Cetaphil2/image copy 2.png",
+      "/mosturiser/Cetaphil2/image copy 3.png"
+    ],
+    link: "https://amzn.to/4aEBeim",
+    features: ["Ultra Hydrating", "Fragrance-Free", "Non-Greasy"],
+    bestFor: "Best Travel Size",
+    skinType: "Dry & Sensitive Skin"
+  },
+  {
+    name: "Foxtale Nourishing Ceramide Face Moisturizer | 100 Hr Hydration | 10ml",
+    brand: "Foxtale",
+    rating: "4.1 (3,755)",
+    price: "₹199",
+    mrp: "₹249",
+    discountPercentage: 20,
+    images: [
+      "/mosturiser/Foxtale/image.png",
+      "/mosturiser/Foxtale/image copy.png"
+    ],
+    link: "https://amzn.to/4bVA04w",
+    features: ["Ceramides", "Niacinamide", "Lightweight"],
+    bestFor: "Best Budget Moisturizer",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Minimalist Marula Oil 5% Face Moisturizer | Hyaluronic Acid | Deep Nourishment",
+    brand: "Minimalist",
+    rating: "4.2 (7,225)",
+    price: "₹269",
+    mrp: "₹299",
+    discountPercentage: 10,
+    images: [
+      "/mosturiser/Minimalist2/image.png",
+      "/mosturiser/Minimalist2/image copy.png",
+      "/mosturiser/Minimalist2/image copy 2.png",
+      "/mosturiser/Minimalist2/image copy 3.png",
+      "/mosturiser/Minimalist2/image copy 4.png"
+    ],
+    link: "https://amzn.to/46eWF8l",
+    features: ["5% Marula Oil", "Hyaluronic Acid", "Deep Hydration"],
+    bestFor: "Best for Very Dry Skin",
+    skinType: "Dry Skin"
   }
+  
 ];
 
 export const faceWashes: Product[] = [
@@ -316,6 +777,153 @@ export const faceWashes: Product[] = [
     features: ["Green tea", "Glycolic Acid", "Oil control"],
     bestFor: "Best for Oily Skin",
     skinType: "Oily Skin"
+  },
+  {
+    name: "Garnier Bright Complete Vitamin C Face Wash | Brightening & Glowing Skin | Daily Cleanser | 160g",
+    brand: "Garnier",
+    rating: "4.2 (13,508)",
+    price: "₹224",
+    mrp: "₹299",
+    discountPercentage: 25,
+    images: [
+      "/cleanser/Garnier/image.png",
+      "/cleanser/Garnier/image copy.png",
+      "/cleanser/Garnier/image copy 2.png",
+      "/cleanser/Garnier/image copy 3.png"
+    ],
+    link: "https://amzn.to/3OoddEI",
+    features: ["Vitamin C", "Brightening", "Daily Cleanser"],
+    bestFor: "Best for Glowing Skin",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Himalaya Purifying Neem Face Wash | Clears Pimples & Acne | Gentle Cleanser | 400ml",
+    brand: "Himalaya",
+    rating: "4.3 (62,575)",
+    price: "₹299",
+    mrp: "₹599",
+    discountPercentage: 50,
+    images: [
+      "/cleanser/Himalaya/image.png",
+      "/cleanser/Himalaya/image copy.png",
+      "/cleanser/Himalaya/image copy 2.png",
+      "/cleanser/Himalaya/image copy 3.png",
+      "/cleanser/Himalaya/image copy 4.png"
+    ],
+    link: "https://amzn.to/4kH3Rjl",
+    features: ["Neem Extract", "Anti-Acne", "Gentle Cleanser"],
+    bestFor: "Best for Acne-Prone Skin",
+    skinType: "Oily & Acne-Prone Skin"
+  },
+  {
+    name: "Cetaphil Gentle Skin Hydrating Face Wash 118ml | Niacinamide & Vitamin B5 | Paraben & Sulphate Free",
+    brand: "Cetaphil",
+    rating: "4.3 (40,709)",
+    price: "₹381",
+    mrp: "₹459",
+    discountPercentage: 17,
+    images: [
+      "/cleanser/Cetaphil1/image.png",
+      "/cleanser/Cetaphil1/image copy.png",
+      "/cleanser/Cetaphil1/image copy 2.png",
+      "/cleanser/Cetaphil1/image copy 3.png"
+    ],
+    link: "https://amzn.to/4kDDcE5",
+    features: ["Soap-Free", "Hydrating", "Dermatologist Tested"],
+    bestFor: "Best for Sensitive Skin",
+    skinType: "Dry & Sensitive Skin"
+  },
+  {
+    name: "The Derma Co Sali-Cinamide Anti-Acne Face Wash | 2% Salicylic Acid & 2% Niacinamide | 80ml",
+    brand: "The Derma Co",
+    rating: "4.2 (10,083)",
+    price: "₹190",
+    mrp: "₹250",
+    discountPercentage: 24,
+    images: [
+      "/cleanser/DermaCo/image.png",
+      "/cleanser/DermaCo/image copy.png",
+      "/cleanser/DermaCo/image copy 2.png",
+      "/cleanser/DermaCo/image copy 3.png",
+      "/cleanser/DermaCo/image copy 4.png"
+    ],
+    link: "https://amzn.to/40fcMPH",
+    features: ["2% Salicylic Acid", "2% Niacinamide", "Oil Control"],
+    bestFor: "Best for Active Acne",
+    skinType: "Oily & Acne-Prone Skin"
+  },
+  {
+    name: "The Face Shop Rice Water Bright Foaming Face Wash | Korean Skincare | 100ml",
+    brand: "The Face Shop",
+    rating: "4.2 (23,590)",
+    price: "₹565",
+    mrp: "₹629",
+    discountPercentage: 10,
+    images: [
+      "/cleanser/TheFaceShop/image.png",
+      "/cleanser/TheFaceShop/image copy.png",
+      "/cleanser/TheFaceShop/image copy 2.png",
+      "/cleanser/TheFaceShop/image copy 3.png",
+      "/cleanser/TheFaceShop/image copy 4.png"
+    ],
+    link: "https://amzn.to/4aVEcjG",
+    features: ["Rice Water", "Brightening", "Foaming Cleanser"],
+    bestFor: "Best for Uneven Skin Tone",
+    skinType: "Oily Skin"
+  },
+  {
+    name: "Cetaphil Oily Skin Cleanser | Deep Cleansing & pH Balanced | 118ml",
+    brand: "Cetaphil",
+    rating: "4.3 (16,325)",
+    price: "₹636",
+    mrp: "₹749",
+    discountPercentage: 15,
+    images: [
+      "/cleanser/Cetaphil2/image.png",
+      "/cleanser/Cetaphil2/image copy.png",
+      "/cleanser/Cetaphil2/image copy 2.png",
+      "/cleanser/Cetaphil2/image copy 3.png"
+    ],
+    link: "https://amzn.to/4kJn5VG",
+    features: ["Deep Cleansing", "pH Balanced", "Non-Irritating"],
+    bestFor: "Best for Oily Skin",
+    skinType: "Oily & Acne-Prone Skin"
+  },
+  {
+    name: "Biotique Fruit Brightening Face Wash | 100% Botanical Extracts | 200ml",
+    brand: "Biotique",
+    rating: "4.0 (28,172)",
+    price: "₹192",
+    mrp: "₹320",
+    discountPercentage: 40,
+    images: [
+      "/cleanser/Biotique/image.png",
+      "/cleanser/Biotique/image copy.png",
+      "/cleanser/Biotique/image copy 2.png",
+      "/cleanser/Biotique/image copy 3.png"
+    ],
+    link: "https://amzn.to/4aA4E10",
+    features: ["Botanical Extracts", "Brightening", "Ayurvedic Formula"],
+    bestFor: "Best Budget Brightening",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Mamaearth Rice Dewy Bright Face Wash | Rice Water & Niacinamide | Hydrating & Glowing | 150ml",
+    brand: "Mamaearth",
+    rating: "4.2 (10,843)",
+    price: "₹271",
+    mrp: "₹417",
+    discountPercentage: 35,
+    images: [
+      "/cleanser/Mamaearth/image.png",
+      "/cleanser/Mamaearth/image copy.png",
+      "/cleanser/Mamaearth/image copy 2.png",
+      "/cleanser/Mamaearth/image copy 3.png"
+    ],
+    link: "https://amzn.to/4qFHY5y",
+    features: ["Rice Water", "Niacinamide", "Hydrating"],
+    bestFor: "Best for Glass Skin",
+    skinType: "All Skin Types"
   }
 ];
 
@@ -387,7 +995,84 @@ export const toners: Product[] = [
     features: ["White lotus", "Alcohol free", "Mist & Toner"],
     bestFor: "Best for All Skin Types",
     skinType: "All Skin Types"
+  },
+  {
+    name: "3% Niacinamide & Rice Water Face Toner | Alcohol-Free | Pore Tightening & Glowing Skin | Fades Blemishes & Brightens | 150ml",
+    brand: "Plum",
+    rating: "4.2 (5,131+)",
+    price: "₹387",
+    mrp: "₹440",
+    discountPercentage: 12,
+    images: [
+      "/toner/Plum1/image.png",
+      "/toner/Plum1/image copy.png",
+      "/toner/Plum1/image copy 2.png",
+      "/toner/Plum1/image copy 3.png",
+      "/toner/Plum1/image copy 4.png",
+      "/toner/Plum1/image copy 5.png"
+    ],
+    link: "https://amzn.to/4ap6K4Y",
+    features: ["3% Niacinamide", "Rice Water", "Alcohol-Free", "Brightening"],
+    bestFor: "Best for Acne & Blemishes",
+    skinType: "Oily, Acne-Prone & Combination Skin"
+  },
+  {
+    name: "8% Glycolic Acid Multi-Functional Exfoliating Toner with Bamboo Water | For Face, Body & Scalp | 150ml",
+    brand: "Minimalist",
+    rating: "4.3 (4,149+)",
+    price: "₹474",
+    mrp: "₹499",
+    discountPercentage: 5,
+    images: [
+      "/toner/Minimalist1/image.png",
+      "/toner/Minimalist1/image copy.png",
+      "/toner/Minimalist1/image copy 2.png",
+      "/toner/Minimalist1/image copy 3.png"
+    ],
+    link: "https://amzn.to/4aHrTX5",
+    features: ["8% Glycolic Acid", "Exfoliating", "Bamboo Water", "Multi-use"],
+    bestFor: "Best Exfoliating Toner",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Bulgarian Valley Rose Water Face Toner with Hyaluronic Acid | Hydrating & Pore Tightening | Alcohol-Free | 100ml",
+    brand: "Plum",
+    rating: "4.2 (5,823+)",
+    price: "₹217",
+    mrp: "₹225",
+    discountPercentage: 4,
+    images: [
+      "/toner/Plum3/image.png",
+      "/toner/Plum3/image copy.png",
+      "/toner/Plum3/image copy 2.png",
+      "/toner/Plum3/image copy 3.png"
+    ],
+    link: "https://amzn.to/3OvVMC6",
+    features: ["Rose Water", "Hyaluronic Acid", "Hydrating", "pH Balancing"],
+    bestFor: "Best Hydrating Toner",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "100% Pure & Natural Rose Water Toner | Alcohol-Free & Paraben-Free | 200ml",
+    brand: "WishCare",
+    rating: "4.4 (1,978+)",
+    price: "₹327",
+    mrp: "₹399",
+    discountPercentage: 18,
+    images: [
+      "/toner/Wishcare/image.png",
+      "/toner/Wishcare/image copy.png",
+      "/toner/Wishcare/image copy 2.png",
+      "/toner/Wishcare/image copy 3.png",
+      "/toner/Wishcare/image copy 4.png"
+    ],
+    link: "https://amzn.to/3Oo38Yo",
+    features: ["100% Natural", "Alcohol-Free", "Hydrating", "Multi-use"],
+    bestFor: "Best Natural Toner",
+    skinType: "All Skin Types"
   }
+  
+
 ];
 
 export const eyeCreams: Product[] = [

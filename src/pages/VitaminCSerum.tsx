@@ -7,8 +7,8 @@ function VitaminCSerum() {
   return (
     <>
       <Helmet>
-        <title>Best Vitamin C Serum Under ₹999 in India (2024) | Brightening Serums</title>
-        <meta name="description" content="Top-rated vitamin C serums under ₹999 for glowing skin in India. 10% to 20% concentration, brightening, dark spot reduction, dermatologist approved." />
+        <title>Best Face Serums Under ₹999 in India (2024) | Brightening Serums</title>
+        <meta name="description" content="Top-rated face serums under ₹999 for glowing skin in India. 10% to 20% concentration, brightening, dark spot reduction, dermatologist approved." />
       </Helmet>
       <div className="min-h-screen bg-gray-50">
       <div className="bg-gradient-to-br from-pink-500 to-rose-500 text-white">
@@ -20,10 +20,10 @@ function VitaminCSerum() {
             </span>
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 leading-tight px-2">
-            Best Vitamin C Serums Under ₹999 in India
+            Best Face Serums Under ₹999 in India
           </h1>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-3xl px-2">
-            Discover the best vitamin C serum for glowing skin in India. These affordable,
+            Discover the best face serums for glowing skin in India. These affordable,
             high-quality serums brighten, reduce dark spots, and boost collagen for radiant,
             youthful skin without the premium price tag.
           </p>
@@ -33,10 +33,10 @@ function VitaminCSerum() {
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-12">
         <div className="mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 px-2">
-            Top Vitamin C Serums for Every Budget
+            Top Face Serums for Every Budget
           </h2>
           <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 px-2">
-            From 10% to 20% concentration, these vitamin C serums are formulated for Indian
+            From 10% to 20% concentration, these face serums are formulated for Indian
             skin types and climate. Find your perfect match for brighter, healthier skin.
           </p>
         </div>
@@ -96,7 +96,7 @@ function VitaminCSerum() {
 
         <div className="bg-white rounded-2xl shadow-sm p-4 sm:p-6 md:p-8 mb-8 sm:mb-12">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
-            Vitamin C Serum Comparison Table
+            Face Serum Comparison Table
           </h2>
           <div className="overflow-x-auto -mx-4 sm:mx-0">
             <table className="w-full min-w-[600px] sm:min-w-0">
@@ -159,7 +159,7 @@ function VitaminCSerum() {
 
         <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-4 sm:p-6 md:p-8 mb-8 sm:mb-12">
           <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-            How to Use Vitamin C Serum Effectively
+            How to Use Face Serum Effectively
           </h3>
           <div className="space-y-3 sm:space-y-4">
             <div className="flex gap-2 sm:gap-3">

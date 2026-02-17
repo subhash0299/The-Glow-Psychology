@@ -83,7 +83,7 @@ function Home() {
                 <Sparkles className="hidden sm:block w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-white" />
                 <div>
                   <h3 className="text-sm sm:text-xl font-bold text-white mb-0.5 sm:mb-1">
-                    Vitamin C Serums
+                    Face Serums
                   </h3>
                   <p className="hidden sm:block text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
                     Brightening serums
