@@ -29,7 +29,7 @@ function Home() {
             We've done the research, read thousands of reviews, and compared hundreds of products 
             so you don't have to. Find the best skincare products for Indian skin—all under ₹999.
           </p>
-          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600 px-2">
+          <div className="hidden sm:flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600 px-2">
             <div className="flex items-center gap-1.5 sm:gap-2">
               <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 flex-shrink-0" />
               <span>Real customer reviews analyzed</span>
@@ -46,29 +46,29 @@ function Home() {
         </div>
 
         <div className="mb-8 sm:mb-12">
-          <div className="text-center mb-6 sm:mb-8">
+          <div className="text-center mb-4 sm:mb-6 md:mb-8">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2 sm:mb-3 px-2">
               Our Product Comparisons
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6">
             <Link
               to="/best-sunscreen-india"
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-orange-500 opacity-90 group-hover:opacity-100 transition-opacity" />
-              <div className="relative p-4 sm:p-5 md:p-6 h-40 sm:h-44 md:h-48 flex flex-col justify-between">
-                <Sun className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-white" />
+              <div className="relative p-2.5 sm:p-5 md:p-6 sm:h-44 md:h-48 flex flex-col justify-between">
+                <Sun className="hidden sm:block w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-white" />
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-1">
+                  <h3 className="text-sm sm:text-xl font-bold text-white mb-0.5 sm:mb-1">
                     Sunscreens
                   </h3>
-                  <p className="text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
+                  <p className="hidden sm:block text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
                     SPF 50 protection
                   </p>
-                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold">
+                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold mt-1 sm:mt-0">
                     Explore
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="hidden sm:inline w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </div>
@@ -79,18 +79,18 @@ function Home() {
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500 to-rose-500 opacity-90 group-hover:opacity-100 transition-opacity" />
-              <div className="relative p-4 sm:p-5 md:p-6 h-40 sm:h-44 md:h-48 flex flex-col justify-between">
-                <Sparkles className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-white" />
+              <div className="relative p-2.5 sm:p-5 md:p-6 sm:h-44 md:h-48 flex flex-col justify-between">
+                <Sparkles className="hidden sm:block w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-white" />
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-1">
+                  <h3 className="text-sm sm:text-xl font-bold text-white mb-0.5 sm:mb-1">
                     Vitamin C Serums
                   </h3>
-                  <p className="text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
+                  <p className="hidden sm:block text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
                     Brightening serums
                   </p>
-                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold">
+                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold mt-1 sm:mt-0">
                     Explore
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="hidden sm:inline w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </div>
@@ -101,18 +101,18 @@ function Home() {
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 opacity-90 group-hover:opacity-100 transition-opacity" />
-              <div className="relative p-4 sm:p-5 md:p-6 h-40 sm:h-44 md:h-48 flex flex-col justify-between">
-                <Droplets className="w-10 h-10 text-white" />
+              <div className="relative p-2.5 sm:p-5 md:p-6 sm:h-44 md:h-48 flex flex-col justify-between">
+                <Droplets className="hidden sm:block w-10 h-10 text-white" />
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-1">
+                  <h3 className="text-sm sm:text-xl font-bold text-white mb-0.5 sm:mb-1">
                     Face Washes
                   </h3>
-                  <p className="text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
+                  <p className="hidden sm:block text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
                     Gentle face washes
                   </p>
-                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold">
+                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold mt-1 sm:mt-0">
                     Explore
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="hidden sm:inline w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </div>
@@ -123,18 +123,18 @@ function Home() {
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-indigo-500 opacity-90 group-hover:opacity-100 transition-opacity" />
-              <div className="relative p-4 sm:p-5 md:p-6 h-40 sm:h-44 md:h-48 flex flex-col justify-between">
-                <Shield className="w-10 h-10 text-white" />
+              <div className="relative p-2.5 sm:p-5 md:p-6 sm:h-44 md:h-48 flex flex-col justify-between">
+                <Shield className="hidden sm:block w-10 h-10 text-white" />
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-1">
+                  <h3 className="text-sm sm:text-xl font-bold text-white mb-0.5 sm:mb-1">
                     Moisturizers
                   </h3>
-                  <p className="text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
+                  <p className="hidden sm:block text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
                     Hydrating creams
                   </p>
-                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold">
+                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold mt-1 sm:mt-0">
                     Explore
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="hidden sm:inline w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </div>
@@ -145,18 +145,18 @@ function Home() {
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-emerald-500 opacity-90 group-hover:opacity-100 transition-opacity" />
-              <div className="relative p-4 sm:p-5 md:p-6 h-40 sm:h-44 md:h-48 flex flex-col justify-between">
-                <Droplets className="w-10 h-10 text-white" />
+              <div className="relative p-2.5 sm:p-5 md:p-6 sm:h-44 md:h-48 flex flex-col justify-between">
+                <Droplets className="hidden sm:block w-10 h-10 text-white" />
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-1">
+                  <h3 className="text-sm sm:text-xl font-bold text-white mb-0.5 sm:mb-1">
                     Toners
                   </h3>
-                  <p className="text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
+                  <p className="hidden sm:block text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
                     Balancing toners
                   </p>
-                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold">
+                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold mt-1 sm:mt-0">
                     Explore
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="hidden sm:inline w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </div>
@@ -167,18 +167,18 @@ function Home() {
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-violet-500 to-purple-500 opacity-90 group-hover:opacity-100 transition-opacity" />
-              <div className="relative p-4 sm:p-5 md:p-6 h-40 sm:h-44 md:h-48 flex flex-col justify-between">
-                <Eye className="w-10 h-10 text-white" />
+              <div className="relative p-2.5 sm:p-5 md:p-6 sm:h-44 md:h-48 flex flex-col justify-between">
+                <Eye className="hidden sm:block w-10 h-10 text-white" />
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-1">
+                  <h3 className="text-sm sm:text-xl font-bold text-white mb-0.5 sm:mb-1">
                     Eye Creams
                   </h3>
-                  <p className="text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
+                  <p className="hidden sm:block text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
                     Dark circle care
                   </p>
-                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold">
+                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold mt-1 sm:mt-0">
                     Explore
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="hidden sm:inline w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </div>
@@ -189,18 +189,18 @@ function Home() {
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-red-500 opacity-90 group-hover:opacity-100 transition-opacity" />
-              <div className="relative p-4 sm:p-5 md:p-6 h-40 sm:h-44 md:h-48 flex flex-col justify-between">
-                <Wand2 className="w-10 h-10 text-white" />
+              <div className="relative p-2.5 sm:p-5 md:p-6 sm:h-44 md:h-48 flex flex-col justify-between">
+                <Wand2 className="hidden sm:block w-10 h-10 text-white" />
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-1">
+                  <h3 className="text-sm sm:text-xl font-bold text-white mb-0.5 sm:mb-1">
                     Exfoliators
                   </h3>
-                  <p className="text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
+                  <p className="hidden sm:block text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
                     Smooth & brighten
                   </p>
-                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold">
+                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold mt-1 sm:mt-0">
                     Explore
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="hidden sm:inline w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </div>
@@ -211,18 +211,18 @@ function Home() {
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-yellow-500 to-amber-500 opacity-90 group-hover:opacity-100 transition-opacity" />
-              <div className="relative p-4 sm:p-5 md:p-6 h-40 sm:h-44 md:h-48 flex flex-col justify-between">
-                <Zap className="w-10 h-10 text-white" />
+              <div className="relative p-2.5 sm:p-5 md:p-6 sm:h-44 md:h-48 flex flex-col justify-between">
+                <Zap className="hidden sm:block w-10 h-10 text-white" />
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-1">
+                  <h3 className="text-sm sm:text-xl font-bold text-white mb-0.5 sm:mb-1">
                     Face Oils
                   </h3>
-                  <p className="text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
+                  <p className="hidden sm:block text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
                     Nourishing oils
                   </p>
-                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold">
+                  <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold mt-1 sm:mt-0">
                     Explore
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="hidden sm:inline w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </div>
@@ -235,12 +235,12 @@ function Home() {
             <h2 className="text-3xl font-bold text-gray-900 mb-3">
               Top Picks from Our Comparisons
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="hidden sm:block text-gray-600 max-w-2xl mx-auto">
               These are the highest-rated products from our detailed comparisons. 
               Click any product to see full details and pricing.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {featuredProducts.map((product, index) => (
               <ProductCard key={index} product={product} />
             ))}

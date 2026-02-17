@@ -99,7 +99,7 @@ function ProductCard({ product }: Props) {
           )}
 
           {product.features && (
-            <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+            <div className="hidden sm:flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
               {product.features.map((feature, index) => (
                 <span
                   key={index}
@@ -136,9 +136,9 @@ function ProductCard({ product }: Props) {
             rel="noopener noreferrer"
             className="mt-2 sm:mt-3"
           >
-            <button className="w-full bg-rose-500 hover:bg-rose-600 text-white text-sm sm:text-base font-semibold py-2 sm:py-2.5 md:py-3 rounded-lg sm:rounded-xl flex items-center justify-center gap-2 transition">
-              Order now on amazon
-              <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
+            <button className="w-full bg-rose-500 hover:bg-rose-600 text-white text-[10px] sm:text-sm md:text-base font-semibold py-2 sm:py-2.5 md:py-3 px-2.5 sm:px-4 md:px-5 rounded-lg sm:rounded-xl flex items-center justify-center gap-1 transition">
+              <span className="whitespace-nowrap">Order now on amazon</span>
+              <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
             </button>
           </a>
         </div>
