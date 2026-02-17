@@ -1,14 +1,14 @@
 import { Helmet } from 'react-helmet-async';
-import { Sun, Shield, Sparkles, Heart, Star, ExternalLink } from 'lucide-react';
+import { Sun, Shield, Sparkles, Star, Droplets, ExternalLink } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
-import { sunscreens } from '../data/products';
+import { faceWashes } from '../data/products';
 
-function Sunscreen() {
+function FaceWash() {
   return (
     <>
       <Helmet>
-        <title>Best Sunscreen Under ₹500 in India (2024) | SPF 50 for Oily Skin</title>
-        <meta name="description" content="Top-rated sunscreens under ₹500 for oily and acne-prone skin in India. SPF 50, no white cast, dermatologist approved. Compare prices and ratings." />
+        <title>Best Face Washes Under ₹500 in India (2024) | SPF 50 for Oily Skin</title>
+        <meta name="description" content="Top-rated face washes under ₹500 for oily and acne-prone skin in India. SPF 50, no white cast, dermatologist approved. Compare prices and ratings." />
       </Helmet>
       <div className="min-h-screen bg-gray-50">
       <div className="bg-gradient-to-br from-amber-500 to-orange-500 text-white">
@@ -20,12 +20,12 @@ function Sunscreen() {
             </span>
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 leading-tight px-2">
-            Best Sunscreens Under ₹500 in India
+            Best Face Washes Under ₹500 in India
           </h1>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-3xl px-2">
-            Looking for affordable sunscreen for oily skin in India? Discover top-rated sun
+            Looking for affordable face washes for oily skin in India? Discover top-rated sun
             protection products that won't break the bank. Perfect for daily use, these
-            sunscreens offer SPF 50 protection without white cast or greasiness.
+            face washes offer SPF 50 protection without white cast or greasiness.
           </p>
         </div>
       </div>
@@ -33,70 +33,70 @@ function Sunscreen() {
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-12">
         <div className="mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 px-2">
-            Top Sunscreen Picks for Indian Skin
+            Top Face Washes Picks for Indian Skin
           </h2>
           <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 px-2">
-            These affordable sunscreens are specially curated for Indian skin types, offering
+            These affordable face washes are specially curated for Indian skin types, offering
             matte finishes, no white cast, and SPF 50 protection perfect for our tropical climate.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
-          {sunscreens.map((product, index) => (
+          {faceWashes.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
         </div>
 
         <div className="bg-white rounded-2xl shadow-sm p-4 sm:p-6 md:p-8 mb-8 sm:mb-12">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
-            Why You Need Sunscreen in India
+            Why You Need Face Washes in India
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-amber-600" />
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <Droplets className="w-6 h-6 text-blue-600" />
                 </div>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-2">UV Protection</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Deep Cleansing</h3>
                 <p className="text-gray-600 text-sm">
-                  Protects against harmful UVA and UVB rays that cause premature aging and skin damage.
+                  Removes dirt, pollution, and makeup that accumulates on Indian skin due to high humidity and pollution levels.
                 </p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center">
-                  <Heart className="w-6 h-6 text-rose-600" />
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                  <Shield className="w-6 h-6 text-green-600" />
                 </div>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-2">Anti-Aging</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Prevents Acne</h3>
                 <p className="text-gray-600 text-sm">
-                  Prevents wrinkles, fine lines, and dark spots caused by sun exposure.
+                  Keeps pores clean and prevents breakouts, especially important in India's hot and humid climate.
                 </p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center">
-                  <Sparkles className="w-6 h-6 text-pink-600" />
+                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                  <Sparkles className="w-6 h-6 text-purple-600" />
                 </div>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-2">Even Skin Tone</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Maintains pH Balance</h3>
                 <p className="text-gray-600 text-sm">
-                  Helps maintain an even complexion by preventing hyperpigmentation.
+                  Gentle face washes help maintain your skin's natural pH, preventing irritation and dryness.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-sm p-8 mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Sunscreen Comparison Table
+        <div className="bg-white rounded-2xl shadow-sm p-4 sm:p-6 md:p-8 mb-8 sm:mb-12">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
+          Face Washes Comparison Table
           </h2>
           <div className="overflow-x-auto -mx-4 sm:mx-0">
             <table className="w-full min-w-[600px] sm:min-w-0">
@@ -112,14 +112,14 @@ function Sunscreen() {
                 </tr>
               </thead>
               <tbody>
-                {sunscreens.map((product, index) => (
+                {faceWashes.map((product, index) => (
                   <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                     <td className="py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm font-medium text-gray-900 max-w-[200px] sm:max-w-none">{product.name}</td>
                     <td className="py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm text-gray-600">{product.spf || "SPF 50"}</td>
                     <td className="py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm text-gray-600">{product.skinType || "All Skin Types"}</td>
                     <td className="py-2 sm:py-3 px-2 sm:px-4">
                       {product.bestFor && (
-                        <span className="inline-block text-xs font-medium bg-amber-100 text-amber-700 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full whitespace-nowrap">
+                        <span className="inline-block text-xs font-medium bg-blue-100 text-blue-700 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full whitespace-nowrap">
                           {product.bestFor}
                         </span>
                       )}
@@ -159,7 +159,7 @@ function Sunscreen() {
 
         <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-4 sm:p-6 md:p-8 mb-8 sm:mb-12">
           <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-            How to Choose the Right Sunscreen
+            How to Choose the Right Face Wash
           </h3>
           <div className="space-y-3 sm:space-y-4">
             <div className="flex gap-2 sm:gap-3">
@@ -191,7 +191,7 @@ function Sunscreen() {
               <div>
                 <h4 className="font-semibold text-sm sm:text-base text-gray-900 mb-1">No White Cast</h4>
                 <p className="text-gray-600 text-xs sm:text-sm">
-                  Look for sunscreens that blend seamlessly without leaving a chalky residue.
+                  Look for face washes that blend seamlessly without leaving a chalky residue.
                 </p>
               </div>
             </div>
@@ -210,4 +210,4 @@ function Sunscreen() {
   );
 }
 
-export default Sunscreen;
+export default FaceWash;
