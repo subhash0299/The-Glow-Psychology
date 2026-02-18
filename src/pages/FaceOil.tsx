@@ -23,7 +23,7 @@ function FaceOil() {
             <div className="flex items-center gap-3 mb-4">
               <Droplets className="w-10 h-10" />
               <span className="text-sm bg-white/20 px-4 py-1 rounded-full">
-                2024 Updated
+                2026 Updated
               </span>
             </div>
 

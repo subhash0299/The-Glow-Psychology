@@ -22,7 +22,7 @@ function Moisturizer() {
             <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
               <Droplets className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10" />
               <span className="text-xs sm:text-sm bg-white/20 px-3 sm:px-4 py-1 rounded-full">
-                2024 Updated
+                2026 Updated
               </span>
             </div>
 

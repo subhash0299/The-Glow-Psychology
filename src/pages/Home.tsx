@@ -1,10 +1,139 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ArrowRight, Sun, Sparkles, Droplets, Shield, Eye, Wand2, Zap, CheckCircle2, TrendingUp, Search, Star } from 'lucide-react';
+import { ArrowRight, Sun, Sparkles, Droplets, Shield, Eye, Wand2, Zap, CheckCircle2, TrendingUp, Search, Star, X, Filter, ChevronDown } from 'lucide-react';
+import { useMemo, useState } from 'react';
 import ProductCard from '../components/ProductCard';
-import { featuredProducts } from '../data/products';
+import { 
+  sunscreens, 
+  vitaminCSerums, 
+  moisturizers, 
+  faceWashes, 
+  toners, 
+  eyeCreams, 
+  exfoliators, 
+  faceOils 
+} from '../data/products';
+
+// Fisher-Yates shuffle algorithm
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+type SortOption = 'default' | 'a-z' | 'price-low-high' | 'price-high-low' | 'rating';
 
 function Home() {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [sortBy, setSortBy] = useState<SortOption>('default');
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
+
+  // Combine all products and shuffle them randomly
+  const allProducts = useMemo(() => {
+    const combined = [
+      ...sunscreens,
+      ...vitaminCSerums,
+      ...moisturizers,
+      ...faceWashes,
+      ...toners,
+      ...eyeCreams,
+      ...exfoliators,
+      ...faceOils
+    ];
+    return shuffleArray(combined);
+  }, []);
+
+  // Helper function to parse price string to number
+  const parsePrice = (priceStr: string): number => {
+    // Remove currency symbols, commas, and extract number
+    const cleaned = priceStr.replace(/[₹,]/g, '').trim();
+    const num = parseFloat(cleaned);
+    return isNaN(num) ? 0 : num;
+  };
+
+  // Helper function to parse rating string to number
+  const parseRating = (ratingStr: string): number => {
+    // Extract the first number from rating string (e.g., "4.1 (30,019)" -> 4.1)
+    const match = ratingStr.match(/^(\d+\.?\d*)/);
+    return match ? parseFloat(match[1]) : 0;
+  };
+
+  // Filter and sort products based on search query and sort option
+  const filteredProducts = useMemo(() => {
+    let products = [...allProducts];
+
+    // Apply search filter
+    if (searchQuery.trim()) {
+      // Split search query into individual words and normalize
+      const searchWords = searchQuery
+        .toLowerCase()
+        .trim()
+        .split(/\s+/)
+        .filter(word => word.length > 0);
+      
+      products = products.filter(product => {
+        const productName = product.name.toLowerCase();
+        // Check if all search words appear in the product name
+        return searchWords.every(word => productName.includes(word));
+      });
+    }
+
+    // Apply sorting
+    switch (sortBy) {
+      case 'a-z':
+        products.sort((a, b) => {
+          const brandA = (a.brand || '').toLowerCase();
+          const brandB = (b.brand || '').toLowerCase();
+          // If both have brands, compare brands
+          if (brandA && brandB) {
+            return brandA.localeCompare(brandB);
+          }
+          // If only A has brand, A comes first
+          if (brandA && !brandB) return -1;
+          // If only B has brand, B comes first
+          if (!brandA && brandB) return 1;
+          // If neither has brand, compare by name
+          return a.name.localeCompare(b.name);
+        });
+        break;
+      case 'price-low-high':
+        products.sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
+        break;
+      case 'price-high-low':
+        products.sort((a, b) => parsePrice(b.price) - parsePrice(a.price));
+        break;
+      case 'rating':
+        products.sort((a, b) => parseRating(b.rating) - parseRating(a.rating));
+        break;
+      case 'default':
+      default:
+        // Keep original shuffled order
+        break;
+    }
+
+    return products;
+  }, [allProducts, searchQuery, sortBy]);
+
+  // Get display text for current filter
+  const getFilterDisplayText = () => {
+    switch (sortBy) {
+      case 'a-z':
+        return 'A-Z';
+      case 'price-low-high':
+        return 'Price Low-High';
+      case 'price-high-low':
+        return 'Price High-Low';
+      case 'rating':
+        return 'Rating';
+      case 'default':
+      default:
+        return 'Filter By';
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -48,7 +177,7 @@ function Home() {
         <div className="mb-8 sm:mb-12">
           <div className="text-center mb-4 sm:mb-6 md:mb-8">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2 sm:mb-3 px-2">
-              Our Product Comparisons
+              Product Categories
             </h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6">
@@ -233,18 +362,159 @@ function Home() {
         <div className="mb-12">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">
-              Top Picks from Our Comparisons
+              {searchQuery ? `Search Results` : 'All Products'}
             </h2>
             <p className="hidden sm:block text-gray-600 max-w-2xl mx-auto">
-              These are the highest-rated products from our detailed comparisons. 
-              Click any product to see full details and pricing.
+              {searchQuery 
+                ? `Found ${filteredProducts.length} product${filteredProducts.length !== 1 ? 's' : ''} matching "${searchQuery}"`
+                : 'Browse through all our curated beauty products. Click any product to see full details and pricing.'
+              }
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
-            {featuredProducts.map((product, index) => (
-              <ProductCard key={index} product={product} />
-            ))}
+
+          {/* Search Bar with Filter Dropdown */}
+          <div className="max-w-4xl mx-auto mb-8">
+            <div className="flex flex-col sm:flex-row gap-3">
+              {/* Search Input */}
+              <div className="relative flex-1">
+                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                  <Search className="h-5 w-5 text-gray-400" />
+                </div>
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search for products by name..."
+                  className="block w-full pl-12 pr-12 py-3 sm:py-4 border border-gray-300 rounded-xl sm:rounded-2xl leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-2 focus:ring-rose-500 focus:border-rose-500 text-sm sm:text-base shadow-sm"
+                />
+                {searchQuery && (
+                  <button
+                    onClick={() => setSearchQuery('')}
+                    className="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-gray-600 transition-colors"
+                    aria-label="Clear search"
+                  >
+                    <X className="h-5 w-5" />
+                  </button>
+                )}
+              </div>
+
+              {/* Filter Dropdown */}
+              <div className="relative">
+                <button
+                  onClick={() => setIsFilterOpen(!isFilterOpen)}
+                  className="flex items-center gap-2 px-4 sm:px-6 py-3 sm:py-4 bg-white border border-gray-300 rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all text-sm sm:text-base font-medium text-gray-700 hover:text-gray-900 min-w-[140px] sm:min-w-[180px] justify-between"
+                >
+                  <div className="flex items-center gap-2">
+                    <Filter className="h-5 w-5 text-rose-600" />
+                    <span>{getFilterDisplayText()}</span>
+                  </div>
+                  <ChevronDown className={`h-4 w-4 transition-transform ${isFilterOpen ? 'rotate-180' : ''}`} />
+                </button>
+
+                {/* Dropdown Menu */}
+                {isFilterOpen && (
+                  <>
+                    <div
+                      className="fixed inset-0 z-10"
+                      onClick={() => setIsFilterOpen(false)}
+                    />
+                    <div className="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-gray-200 z-20 py-2">
+                      <button
+                        onClick={() => {
+                          setSortBy('default');
+                          setIsFilterOpen(false);
+                        }}
+                        className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${
+                          sortBy === 'default'
+                            ? 'bg-rose-100 text-rose-700 font-semibold'
+                            : 'text-gray-700 hover:bg-gray-50'
+                        }`}
+                      >
+                        Default
+                      </button>
+                      <button
+                        onClick={() => {
+                          setSortBy('a-z');
+                          setIsFilterOpen(false);
+                        }}
+                        className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${
+                          sortBy === 'a-z'
+                            ? 'bg-rose-100 text-rose-700 font-semibold'
+                            : 'text-gray-700 hover:bg-gray-50'
+                        }`}
+                      >
+                        A-Z
+                      </button>
+                      <button
+                        onClick={() => {
+                          setSortBy('price-low-high');
+                          setIsFilterOpen(false);
+                        }}
+                        className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${
+                          sortBy === 'price-low-high'
+                            ? 'bg-rose-100 text-rose-700 font-semibold'
+                            : 'text-gray-700 hover:bg-gray-50'
+                        }`}
+                      >
+                        Price Low-High
+                      </button>
+                      <button
+                        onClick={() => {
+                          setSortBy('price-high-low');
+                          setIsFilterOpen(false);
+                        }}
+                        className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${
+                          sortBy === 'price-high-low'
+                            ? 'bg-rose-100 text-rose-700 font-semibold'
+                            : 'text-gray-700 hover:bg-gray-50'
+                        }`}
+                      >
+                        Price High-Low
+                      </button>
+                      <button
+                        onClick={() => {
+                          setSortBy('rating');
+                          setIsFilterOpen(false);
+                        }}
+                        className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${
+                          sortBy === 'rating'
+                            ? 'bg-rose-100 text-rose-700 font-semibold'
+                            : 'text-gray-700 hover:bg-gray-50'
+                        }`}
+                      >
+                        Rating
+                      </button>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
           </div>
+
+          {/* Products Grid */}
+          {filteredProducts.length > 0 ? (
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+              {filteredProducts.map((product, index) => (
+                <ProductCard key={`${product.name}-${index}`} product={product} />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <Search className="mx-auto h-12 w-12 text-gray-400 mb-4" />
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                No products found
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Try searching with different keywords or clear your search to see all products.
+              </p>
+              <button
+                onClick={() => setSearchQuery('')}
+                className="inline-flex items-center px-4 py-2 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition-colors"
+              >
+                Clear Search
+              </button>
+            </div>
+          )}
         </div>
 
         {/* How We Compare Section */}

@@ -16,7 +16,7 @@ function Sunscreen() {
           <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
             <Sun className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10" />
             <span className="text-xs sm:text-sm font-semibold bg-white/20 px-3 sm:px-4 py-1 rounded-full">
-              2024 Updated
+              2026 Updated
             </span>
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 leading-tight px-2">
