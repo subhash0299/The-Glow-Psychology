@@ -1214,6 +1214,87 @@ export const exfoliators: Product[] = [
     features: ["Mandelic Acid", "Walnuts", "Brightening"],
     bestFor: "Best for Tan Removal",
     skinType: "Acne-Prone Skin"
+  },
+  {
+    name: "mCaffeine Coffee Tan & Dead Skin Removal Face Scrub | Caffeine & Walnut | 75g",
+    brand: "mCaffeine",
+    rating: "4.1 (11,015)",
+    price: "₹185",
+    mrp: "₹228",
+    discountPercentage: 19,
+    images: [
+      "/exfoliator/Mcaffeine1/image.png",
+      "/exfoliator/Mcaffeine1/image copy.png",
+      "/exfoliator/Mcaffeine1/image copy 2.png",
+      "/exfoliator/Mcaffeine1/image copy 3.png",
+      "/exfoliator/Mcaffeine1/image copy 4.png",
+      "/exfoliator/Mcaffeine1/image copy 5.png"
+    ],
+    link: "https://amzn.to/3OQH6xu",
+    features: ["Caffeine", "Walnut Scrub", "Detan"],
+    bestFor: "Best for Tan Removal",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Glamveda Rice Water Brightening Face Scrub | Creamy Exfoliator | 100g",
+    brand: "Glamveda",
+    rating: "4.2 (426)",
+    price: "₹149",
+    mrp: "₹261",
+    discountPercentage: 43,
+    images: [
+      "/exfoliator/Glamveda/image.png",
+      "/exfoliator/Glamveda/image copy.png",
+      "/exfoliator/Glamveda/image copy 2.png",
+      "/exfoliator/Glamveda/image copy 3.png",
+      "/exfoliator/Glamveda/image copy 4.png",
+      "/exfoliator/Glamveda/image copy 5.png"
+    ],
+    link: "https://amzn.to/4sjrAcj",
+    features: ["Rice Extract", "Brightening", "Creamy Texture"],
+    bestFor: "Best Budget Scrub",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "mCaffeine Pore Clearing Coffee & Cookie Face Scrub | 4.5% Exfoliants | 100g",
+    brand: "mCaffeine",
+    rating: "4.2 (116)",
+    price: "₹310",
+    mrp: "₹348",
+    discountPercentage: 11,
+    images: [
+      "/exfoliator/Mcaffeine2/image.png",
+      "/exfoliator/Mcaffeine2/image copy.png",
+      "/exfoliator/Mcaffeine2/image copy 2.png",
+      "/exfoliator/Mcaffeine2/image copy 3.png",
+      "/exfoliator/Mcaffeine2/image copy 4.png",
+      "/exfoliator/Mcaffeine2/image copy 5.png",
+      "/exfoliator/Mcaffeine2/image copy 6.png",
+      "/exfoliator/Mcaffeine2/image copy 7.png"
+    ],
+    link: "https://amzn.to/3MRTH31",
+    features: ["Coffee", "Charcoal", "Clay"],
+    bestFor: "Best for Blackheads",
+    skinType: "Oily & Combination Skin"
+  },
+  {
+    name: "DR.RASHEL De-Tan Scrub For Face & Body | Deep Exfoliation | 380ml",
+    brand: "DR.RASHEL",
+    rating: "4.1 (5,321)",
+    price: "₹156",
+    mrp: "₹274",
+    discountPercentage: 43,
+    images: [
+      "/exfoliator/DRRASHEL/image.png",
+      "/exfoliator/DRRASHEL/image copy.png",
+      "/exfoliator/DRRASHEL/image copy 2.png",
+      "/exfoliator/DRRASHEL/image copy 3.png",
+      "/exfoliator/DRRASHEL/image copy 4.png"
+    ],
+    link: "https://amzn.to/3OnQmt6",
+    features: ["De-Tan", "Deep Cleansing", "Blackhead Removal"],
+    bestFor: "Best for Face & Body",
+    skinType: "All Skin Types"
   }
 ];
 

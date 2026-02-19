@@ -9,6 +9,7 @@ function Navbar() {
 
   const navLinks = [
     { path: '/', label: 'Home' },
+    { path: '/blog', label: 'Blog' },
     { path: '/best-sunscreen-india', label: 'Sunscreen' },
     { path: '/best-vitamin-c-serum-india', label: 'Face Serum' },
     { path: '/best-face-cleanser-india', label: 'Face Wash' },

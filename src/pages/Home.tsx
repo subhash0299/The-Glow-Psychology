@@ -154,24 +154,6 @@ function Home() {
               We Compared Everything
             </span>
           </h1>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8 px-2">
-            We've done the research, read thousands of reviews, and compared hundreds of products 
-            so you don't have to. Find the best skincare products for Indian skin—all under ₹999.
-          </p>
-          <div className="hidden sm:flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600 px-2">
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 flex-shrink-0" />
-              <span>Real customer reviews analyzed</span>
-            </div>
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 flex-shrink-0" />
-              <span>Price comparison included</span>
-            </div>
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 flex-shrink-0" />
-              <span>Best picks highlighted</span>
-            </div>
-          </div>
         </div>
 
         <div className="mb-8 sm:mb-12">

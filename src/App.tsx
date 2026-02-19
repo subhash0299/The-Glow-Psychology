@@ -10,6 +10,8 @@ import Toner from './pages/Toner';
 import EyeCream from './pages/EyeCream';
 import Exfoliator from './pages/Exfoliator';
 import FaceOil from './pages/FaceOil';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/best-eye-cream-india" element={<EyeCream />} />
           <Route path="/best-exfoliator-india" element={<Exfoliator />} />
           <Route path="/best-face-oil-india" element={<FaceOil />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
