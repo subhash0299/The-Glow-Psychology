@@ -33,6 +33,18 @@ function Blog() {
       <Helmet>
         <title>Beauty & Skincare Blog | Expert Guides & Tips (2026)</title>
         <meta name="description" content="Expert skincare guides, ingredient education, and beauty tips for Indian skin. Learn about routines, products, and solutions for common skin concerns." />
+        <link rel="canonical" href="https://glowfinds.vercel.app/blog" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://glowfinds.vercel.app/blog" />
+        <meta property="og:title" content="Beauty & Skincare Blog | Expert Guides & Tips (2026)" />
+        <meta property="og:description" content="Expert skincare guides, ingredient education, and beauty tips for Indian skin. Learn about routines, products, and solutions for common skin concerns." />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Beauty & Skincare Blog | Expert Guides & Tips (2026)" />
+        <meta name="twitter:description" content="Expert skincare guides, ingredient education, and beauty tips for Indian skin. Learn about routines, products, and solutions for common skin concerns." />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
         <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-12">

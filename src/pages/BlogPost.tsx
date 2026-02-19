@@ -87,7 +87,7 @@ function BlogPost() {
     ? blogPosts.filter(p => post.relatedPosts?.includes(p.slug))
     : [];
 
-  const canonicalUrl = `https://theglowpsychology.com${location.pathname}`;
+  const canonicalUrl = `https://glowfinds.vercel.app${location.pathname}`;
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -98,7 +98,7 @@ function BlogPost() {
     dateModified: post.date,
     author: {
       '@type': 'Organization',
-      name: 'The Glow Psychology',
+      name: 'Glow Finds',
     },
     articleSection: post.category,
     mainEntityOfPage: {
@@ -129,6 +129,25 @@ function BlogPost() {
         <title>{post.title} | Beauty Blog</title>
         <meta name="description" content={post.description} />
         <link rel="canonical" href={canonicalUrl} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.description} />
+        {post.featuredImage && <meta property="og:image" content={post.featuredImage} />}
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.description} />
+        {post.featuredImage && <meta name="twitter:image" content={post.featuredImage} />}
+        
+        {/* Article Meta */}
+        <meta property="article:published_time" content={post.date} />
+        <meta property="article:section" content={post.category} />
+        
+        {/* Schema.org JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
