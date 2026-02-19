@@ -1,19 +1,35 @@
 import { Helmet } from "react-helmet-async";
+import { useLocation } from 'react-router-dom';
 import { Sparkles, Star, ExternalLink } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import { exfoliators } from "../data/products";
 
 function Exfoliator() {
+  const location = useLocation();
+  const canonicalUrl = `https://glowfinds.vercel.app${location.pathname}`;
+  
   return (
     <>
       <Helmet>
         <title>
-          Best Exfoliators & Peeling Solutions in India (2024) | Under ₹999
+          Best Exfoliators & Peeling Solutions in India (2026) | Under ₹999
         </title>
         <meta
           name="description"
           content="Top-rated exfoliators and peeling solutions under ₹999 in India. Chemical peels and gentle scrubs for glowing, smooth skin."
         />
+        <link rel="canonical" href={canonicalUrl} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:title" content="Best Exfoliators & Peeling Solutions in India (2026) | Under ₹999" />
+        <meta property="og:description" content="Top-rated exfoliators and peeling solutions under ₹999 in India. Chemical peels and gentle scrubs for glowing, smooth skin." />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Best Exfoliators & Peeling Solutions in India (2026) | Under ₹999" />
+        <meta name="twitter:description" content="Top-rated exfoliators and peeling solutions under ₹999 in India. Chemical peels and gentle scrubs for glowing, smooth skin." />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">

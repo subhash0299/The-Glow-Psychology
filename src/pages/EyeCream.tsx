@@ -1,19 +1,35 @@
 import { Helmet } from "react-helmet-async";
+import { useLocation } from 'react-router-dom';
 import { Eye, Star, ExternalLink } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import { eyeCreams } from "../data/products";
 
 function EyeCream() {
+  const location = useLocation();
+  const canonicalUrl = `https://glowfinds.vercel.app${location.pathname}`;
+  
   return (
     <>
       <Helmet>
         <title>
-          Best Under Eye Creams in India (2024) | Dark Circles & Puffiness
+          Best Under Eye Creams in India (2026) | Dark Circles & Puffiness
         </title>
         <meta
           name="description"
           content="Best under eye creams in India for dark circles, puffiness and fine lines. Affordable options with caffeine, peptides and retinol."
         />
+        <link rel="canonical" href={canonicalUrl} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:title" content="Best Under Eye Creams in India (2026) | Dark Circles & Puffiness" />
+        <meta property="og:description" content="Best under eye creams in India for dark circles, puffiness and fine lines. Affordable options with caffeine, peptides and retinol." />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Best Under Eye Creams in India (2026) | Dark Circles & Puffiness" />
+        <meta name="twitter:description" content="Best under eye creams in India for dark circles, puffiness and fine lines. Affordable options with caffeine, peptides and retinol." />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">

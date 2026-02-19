@@ -1,14 +1,30 @@
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
 import { Sparkles, Star, Zap, ExternalLink } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import { vitaminCSerums } from '../data/products';
 
 function VitaminCSerum() {
+  const location = useLocation();
+  const canonicalUrl = `https://glowfinds.vercel.app${location.pathname}`;
+  
   return (
     <>
       <Helmet>
-        <title>Best Face Serums Under ₹999 in India (2024) | Brightening Serums</title>
+        <title>Best Face Serums Under ₹999 in India (2026) | Brightening Serums</title>
         <meta name="description" content="Top-rated face serums under ₹999 for glowing skin in India. 10% to 20% concentration, brightening, dark spot reduction, dermatologist approved." />
+        <link rel="canonical" href={canonicalUrl} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:title" content="Best Face Serums Under ₹999 in India (2026) | Brightening Serums" />
+        <meta property="og:description" content="Top-rated face serums under ₹999 for glowing skin in India. 10% to 20% concentration, brightening, dark spot reduction, dermatologist approved." />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Best Face Serums Under ₹999 in India (2026) | Brightening Serums" />
+        <meta name="twitter:description" content="Top-rated face serums under ₹999 for glowing skin in India. 10% to 20% concentration, brightening, dark spot reduction, dermatologist approved." />
       </Helmet>
       <div className="min-h-screen bg-gray-50">
       <div className="bg-gradient-to-br from-pink-500 to-rose-500 text-white">

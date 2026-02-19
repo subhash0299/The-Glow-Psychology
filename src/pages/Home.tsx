@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Sun, Sparkles, Droplets, Shield, Eye, Wand2, Zap, CheckCircle2, TrendingUp, Search, Star, X, Filter, ChevronDown } from 'lucide-react';
 import { useMemo, useState } from 'react';
@@ -27,6 +27,7 @@ function shuffleArray<T>(array: T[]): T[] {
 type SortOption = 'default' | 'a-z' | 'price-low-high' | 'price-high-low' | 'rating';
 
 function Home() {
+  const location = useLocation();
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<SortOption>('default');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -137,8 +138,20 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Best Budget Beauty Products in India | Affordable Skincare Under ₹999</title>
+        <title>Best Budget Beauty Products in India | Affordable Skincare Under ₹999 (2026)</title>
         <meta name="description" content="Discover affordable skincare picks for Indian skin. From sunscreens to serums, find the best beauty products under ₹999 with verified reviews and ratings." />
+        <link rel="canonical" href={`https://glowfinds.vercel.app${location.pathname}`} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://glowfinds.vercel.app${location.pathname}`} />
+        <meta property="og:title" content="Best Budget Beauty Products in India | Affordable Skincare Under ₹999 (2026)" />
+        <meta property="og:description" content="Discover affordable skincare picks for Indian skin. From sunscreens to serums, find the best beauty products under ₹999 with verified reviews and ratings." />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Best Budget Beauty Products in India | Affordable Skincare Under ₹999 (2026)" />
+        <meta name="twitter:description" content="Discover affordable skincare picks for Indian skin. From sunscreens to serums, find the best beauty products under ₹999 with verified reviews and ratings." />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-12">

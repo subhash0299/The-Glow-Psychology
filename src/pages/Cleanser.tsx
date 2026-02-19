@@ -1,14 +1,30 @@
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
 import { Sun, Shield, Sparkles, Star, Droplets, ExternalLink } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import { faceWashes } from '../data/products';
 
 function FaceWash() {
+  const location = useLocation();
+  const canonicalUrl = `https://glowfinds.vercel.app${location.pathname}`;
+  
   return (
     <>
       <Helmet>
-        <title>Best Face Washes Under ₹500 in India (2024) | SPF 50 for Oily Skin</title>
-        <meta name="description" content="Top-rated face washes under ₹500 for oily and acne-prone skin in India. SPF 50, no white cast, dermatologist approved. Compare prices and ratings." />
+        <title>Best Face Washes Under ₹500 in India (2026) | For Oily & Acne-Prone Skin</title>
+        <meta name="description" content="Top-rated face washes under ₹500 for oily and acne-prone skin in India. Gentle cleansers, salicylic acid, dermatologist approved. Compare prices and ratings." />
+        <link rel="canonical" href={canonicalUrl} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:title" content="Best Face Washes Under ₹500 in India (2026) | For Oily & Acne-Prone Skin" />
+        <meta property="og:description" content="Top-rated face washes under ₹500 for oily and acne-prone skin in India. Gentle cleansers, salicylic acid, dermatologist approved. Compare prices and ratings." />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Best Face Washes Under ₹500 in India (2026) | For Oily & Acne-Prone Skin" />
+        <meta name="twitter:description" content="Top-rated face washes under ₹500 for oily and acne-prone skin in India. Gentle cleansers, salicylic acid, dermatologist approved. Compare prices and ratings." />
       </Helmet>
       <div className="min-h-screen bg-gray-50">
       <div className="bg-gradient-to-br from-amber-500 to-orange-500 text-white">

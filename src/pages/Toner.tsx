@@ -1,19 +1,35 @@
 import { Helmet } from "react-helmet-async";
+import { useLocation } from 'react-router-dom';
 import { Droplets, Star, ExternalLink } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import { toners } from "../data/products";
 
 function Toner() {
+  const location = useLocation();
+  const canonicalUrl = `https://glowfinds.vercel.app${location.pathname}`;
+  
   return (
     <>
       <Helmet>
         <title>
-          Best Face Toners in India (2024) | Alcohol-Free & Hydrating Toners
+          Best Face Toners in India (2026) | Alcohol-Free & Hydrating Toners
         </title>
         <meta
           name="description"
           content="Best face toners in India including alcohol-free and hydrating formulas. Great for oily, sensitive and combination skin."
         />
+        <link rel="canonical" href={canonicalUrl} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:title" content="Best Face Toners in India (2026) | Alcohol-Free & Hydrating Toners" />
+        <meta property="og:description" content="Best face toners in India including alcohol-free and hydrating formulas. Great for oily, sensitive and combination skin." />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Best Face Toners in India (2026) | Alcohol-Free & Hydrating Toners" />
+        <meta name="twitter:description" content="Best face toners in India including alcohol-free and hydrating formulas. Great for oily, sensitive and combination skin." />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">

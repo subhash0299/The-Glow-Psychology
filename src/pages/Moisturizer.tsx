@@ -1,17 +1,33 @@
 import { Helmet } from "react-helmet-async";
+import { useLocation } from 'react-router-dom';
 import { Droplets, Star, ExternalLink } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import { moisturizers } from "../data/products";
 
 function Moisturizer() {
+  const location = useLocation();
+  const canonicalUrl = `https://glowfinds.vercel.app${location.pathname}`;
+  
   return (
     <>
       <Helmet>
-        <title>Best Face Moisturizers in India (2024) | For Oily, Dry & Acne Skin</title>
+        <title>Best Face Moisturizers in India (2026) | For Oily, Dry & Acne Skin</title>
         <meta
           name="description"
           content="Top-rated moisturizers for oily, dry & acne-prone skin in India. Lightweight, non-greasy & dermatologist recommended options."
         />
+        <link rel="canonical" href={canonicalUrl} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:title" content="Best Face Moisturizers in India (2026) | For Oily, Dry & Acne Skin" />
+        <meta property="og:description" content="Top-rated moisturizers for oily, dry & acne-prone skin in India. Lightweight, non-greasy & dermatologist recommended options." />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Best Face Moisturizers in India (2026) | For Oily, Dry & Acne Skin" />
+        <meta name="twitter:description" content="Top-rated moisturizers for oily, dry & acne-prone skin in India. Lightweight, non-greasy & dermatologist recommended options." />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">

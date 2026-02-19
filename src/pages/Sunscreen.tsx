@@ -1,14 +1,30 @@
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
 import { Sun, Shield, Sparkles, Heart, Star, ExternalLink } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import { sunscreens } from '../data/products';
 
 function Sunscreen() {
+  const location = useLocation();
+  const canonicalUrl = `https://glowfinds.vercel.app${location.pathname}`;
+  
   return (
     <>
       <Helmet>
-        <title>Best Sunscreen Under ₹500 in India (2024) | SPF 50 for Oily Skin</title>
+        <title>Best Sunscreen Under ₹500 in India (2026) | SPF 50 for Oily Skin</title>
         <meta name="description" content="Top-rated sunscreens under ₹500 for oily and acne-prone skin in India. SPF 50, no white cast, dermatologist approved. Compare prices and ratings." />
+        <link rel="canonical" href={canonicalUrl} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:title" content="Best Sunscreen Under ₹500 in India (2026) | SPF 50 for Oily Skin" />
+        <meta property="og:description" content="Top-rated sunscreens under ₹500 for oily and acne-prone skin in India. SPF 50, no white cast, dermatologist approved. Compare prices and ratings." />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Best Sunscreen Under ₹500 in India (2026) | SPF 50 for Oily Skin" />
+        <meta name="twitter:description" content="Top-rated sunscreens under ₹500 for oily and acne-prone skin in India. SPF 50, no white cast, dermatologist approved. Compare prices and ratings." />
       </Helmet>
       <div className="min-h-screen bg-gray-50">
       <div className="bg-gradient-to-br from-amber-500 to-orange-500 text-white">
