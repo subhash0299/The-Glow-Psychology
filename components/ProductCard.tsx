@@ -1,12 +1,15 @@
+'use client'
+
 import { useState, useEffect } from "react";
 import { Star, ExternalLink, X, ChevronLeft, ChevronRight } from "lucide-react";
-import { Product } from "../data/products";
+import { Product } from "@/data/products";
+import Image from "next/image";
 
 interface Props {
   product: Product;
 }
 
-function ProductCard({ product }: Props) {
+export default function ProductCard({ product }: Props) {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
   const [touchStart, setTouchStart] = useState(0);
@@ -67,12 +70,18 @@ function ProductCard({ product }: Props) {
 
         {/* IMAGE SECTION */}
         <div className="relative mb-4 sm:mb-5 md:mb-6 flex justify-center">
-          <img
-            src={product.images[0]}
-            alt={product.name}
+          <div
             onClick={() => setIsOpen(true)}
-            className="max-h-48 sm:max-h-60 md:max-h-72 w-auto object-contain cursor-zoom-in hover:scale-105 transition duration-300"
-          />
+            className="cursor-zoom-in hover:scale-105 transition duration-300"
+          >
+            <Image
+              src={product.images[0]}
+              alt={product.name}
+              width={300}
+              height={300}
+              className="max-h-48 sm:max-h-60 md:max-h-72 w-auto object-contain"
+            />
+          </div>
 
           {/* Rating Badge */}
           <div className="absolute top-1.5 sm:top-2 right-1.5 sm:right-2 bg-white shadow px-2 sm:px-3 py-0.5 sm:py-1 rounded-full flex items-center gap-1 text-xs sm:text-sm font-semibold">
@@ -191,9 +200,11 @@ function ProductCard({ product }: Props) {
             </button>
           </>
         )}
-        <img
+        <Image
           src={product.images[currentImage]}
           alt={product.name}
+          width={800}
+          height={800}
           className="max-h-[50vh] sm:max-h-[60vh] md:max-h-[70vh] w-full object-contain select-none"
           draggable={false}
         />
@@ -207,11 +218,13 @@ function ProductCard({ product }: Props) {
       {/* THUMBNAILS */}
       <div className="flex justify-center gap-2 sm:gap-3 flex-wrap mb-4 sm:mb-5">
         {product.images.map((img, index) => (
-          <img
+          <Image
             key={index}
             src={img}
             alt="thumbnail"
             onClick={() => setCurrentImage(index)}
+            width={80}
+            height={80}
             className={`h-14 sm:h-16 md:h-20 cursor-pointer border-2 rounded-lg ${
               currentImage === index
                 ? "border-rose-500"
@@ -264,4 +277,4 @@ function ProductCard({ product }: Props) {
   </>
   );
 }
-export default ProductCard;
+

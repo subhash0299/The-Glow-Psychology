@@ -1,8 +1,9 @@
-import { Link, useLocation } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
-import { ArrowRight, Sun, Sparkles, Droplets, Shield, Eye, Wand2, Zap, CheckCircle2, TrendingUp, Search, Star, X, Filter, ChevronDown } from 'lucide-react';
-import { useMemo, useState } from 'react';
-import ProductCard from '../components/ProductCard';
+'use client'
+
+import Link from 'next/link'
+import { ArrowRight, Sun, Sparkles, Droplets, Shield, Eye, Wand2, Zap, CheckCircle2, TrendingUp, Search, Star, X, Filter, ChevronDown } from 'lucide-react'
+import { useMemo, useState, useEffect } from 'react'
+import ProductCard from '@/components/ProductCard'
 import { 
   sunscreens, 
   vitaminCSerums, 
@@ -12,29 +13,29 @@ import {
   eyeCreams, 
   exfoliators, 
   faceOils 
-} from '../data/products';
+} from '@/data/products'
 
 // Fisher-Yates shuffle algorithm
 function shuffleArray<T>(array: T[]): T[] {
-  const shuffled = [...array];
+  const shuffled = [...array]
   for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
   }
-  return shuffled;
+  return shuffled
 }
 
-type SortOption = 'default' | 'a-z' | 'price-low-high' | 'price-high-low' | 'rating';
+type SortOption = 'default' | 'a-z' | 'price-low-high' | 'price-high-low' | 'rating'
 
-function Home() {
-  const location = useLocation();
-  const [searchQuery, setSearchQuery] = useState('');
-  const [sortBy, setSortBy] = useState<SortOption>('default');
-  const [isFilterOpen, setIsFilterOpen] = useState(false);
+export default function HomeClient() {
+  const [searchQuery, setSearchQuery] = useState('')
+  const [sortBy, setSortBy] = useState<SortOption>('default')
+  const [isFilterOpen, setIsFilterOpen] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
 
-  // Combine all products and shuffle them randomly
-  const allProducts = useMemo(() => {
-    const combined = [
+  // Combine all products - keep consistent order for SSR, shuffle on client
+  const baseProducts = useMemo(() => {
+    return [
       ...sunscreens,
       ...vitaminCSerums,
       ...moisturizers,
@@ -43,28 +44,40 @@ function Home() {
       ...eyeCreams,
       ...exfoliators,
       ...faceOils
-    ];
-    return shuffleArray(combined);
-  }, []);
+    ]
+  }, [])
+
+  // Shuffle only on client side after hydration to avoid hydration mismatch
+  const allProducts = useMemo(() => {
+    if (!isMounted) {
+      return baseProducts // Return unshuffled for SSR
+    }
+    return shuffleArray(baseProducts)
+  }, [baseProducts, isMounted])
+
+  // Shuffle on client side only after component mounts
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   // Helper function to parse price string to number
   const parsePrice = (priceStr: string): number => {
     // Remove currency symbols, commas, and extract number
-    const cleaned = priceStr.replace(/[₹,]/g, '').trim();
-    const num = parseFloat(cleaned);
-    return isNaN(num) ? 0 : num;
-  };
+    const cleaned = priceStr.replace(/[₹,]/g, '').trim()
+    const num = parseFloat(cleaned)
+    return isNaN(num) ? 0 : num
+  }
 
   // Helper function to parse rating string to number
   const parseRating = (ratingStr: string): number => {
     // Extract the first number from rating string (e.g., "4.1 (30,019)" -> 4.1)
-    const match = ratingStr.match(/^(\d+\.?\d*)/);
-    return match ? parseFloat(match[1]) : 0;
-  };
+    const match = ratingStr.match(/^(\d+\.?\d*)/)
+    return match ? parseFloat(match[1]) : 0
+  }
 
   // Filter and sort products based on search query and sort option
   const filteredProducts = useMemo(() => {
-    let products = [...allProducts];
+    let products = [...allProducts]
 
     // Apply search filter
     if (searchQuery.trim()) {
@@ -73,87 +86,70 @@ function Home() {
         .toLowerCase()
         .trim()
         .split(/\s+/)
-        .filter(word => word.length > 0);
+        .filter(word => word.length > 0)
       
       products = products.filter(product => {
-        const productName = product.name.toLowerCase();
+        const productName = product.name.toLowerCase()
         // Check if all search words appear in the product name
-        return searchWords.every(word => productName.includes(word));
-      });
+        return searchWords.every(word => productName.includes(word))
+      })
     }
 
     // Apply sorting
     switch (sortBy) {
       case 'a-z':
         products.sort((a, b) => {
-          const brandA = (a.brand || '').toLowerCase();
-          const brandB = (b.brand || '').toLowerCase();
+          const brandA = (a.brand || '').toLowerCase()
+          const brandB = (b.brand || '').toLowerCase()
           // If both have brands, compare brands
           if (brandA && brandB) {
-            return brandA.localeCompare(brandB);
+            return brandA.localeCompare(brandB)
           }
           // If only A has brand, A comes first
-          if (brandA && !brandB) return -1;
+          if (brandA && !brandB) return -1
           // If only B has brand, B comes first
-          if (!brandA && brandB) return 1;
+          if (!brandA && brandB) return 1
           // If neither has brand, compare by name
-          return a.name.localeCompare(b.name);
-        });
-        break;
+          return a.name.localeCompare(b.name)
+        })
+        break
       case 'price-low-high':
-        products.sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
-        break;
+        products.sort((a, b) => parsePrice(a.price) - parsePrice(b.price))
+        break
       case 'price-high-low':
-        products.sort((a, b) => parsePrice(b.price) - parsePrice(a.price));
-        break;
+        products.sort((a, b) => parsePrice(b.price) - parsePrice(a.price))
+        break
       case 'rating':
-        products.sort((a, b) => parseRating(b.rating) - parseRating(a.rating));
-        break;
+        products.sort((a, b) => parseRating(b.rating) - parseRating(a.rating))
+        break
       case 'default':
       default:
         // Keep original shuffled order
-        break;
+        break
     }
 
-    return products;
-  }, [allProducts, searchQuery, sortBy]);
+    return products
+  }, [allProducts, searchQuery, sortBy])
 
   // Get display text for current filter
   const getFilterDisplayText = () => {
     switch (sortBy) {
       case 'a-z':
-        return 'A-Z';
+        return 'A-Z'
       case 'price-low-high':
-        return 'Price Low-High';
+        return 'Price Low-High'
       case 'price-high-low':
-        return 'Price High-Low';
+        return 'Price High-Low'
       case 'rating':
-        return 'Rating';
+        return 'Rating'
       case 'default':
       default:
-        return 'Filter By';
+        return 'Filter By'
     }
-  };
+  }
 
   return (
-    <>
-      <Helmet>
-        <title>Best Budget Beauty Products in India | Affordable Skincare Under ₹999 (2026)</title>
-        <meta name="description" content="Discover affordable skincare picks for Indian skin. From sunscreens to serums, find the best beauty products under ₹999 with verified reviews and ratings." />
-        <link rel="canonical" href={`https://glowfinds.vercel.app${location.pathname}`} />
-        
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://glowfinds.vercel.app${location.pathname}`} />
-        <meta property="og:title" content="Best Budget Beauty Products in India | Affordable Skincare Under ₹999 (2026)" />
-        <meta property="og:description" content="Discover affordable skincare picks for Indian skin. From sunscreens to serums, find the best beauty products under ₹999 with verified reviews and ratings." />
-        
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Best Budget Beauty Products in India | Affordable Skincare Under ₹999 (2026)" />
-        <meta name="twitter:description" content="Discover affordable skincare picks for Indian skin. From sunscreens to serums, find the best beauty products under ₹999 with verified reviews and ratings." />
-      </Helmet>
-      <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-12">
         {/* Hero Section */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
@@ -177,7 +173,7 @@ function Home() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6">
             <Link
-              to="/best-sunscreen-india"
+              href="/best-sunscreen-india"
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-orange-500 opacity-90 group-hover:opacity-100 transition-opacity" />
@@ -199,7 +195,7 @@ function Home() {
             </Link>
 
             <Link
-              to="/best-vitamin-c-serum-india"
+              href="/best-vitamin-c-serum-india"
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500 to-rose-500 opacity-90 group-hover:opacity-100 transition-opacity" />
@@ -221,7 +217,7 @@ function Home() {
             </Link>
 
             <Link
-              to="/best-face-cleanser-india"
+              href="/best-face-cleanser-india"
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 opacity-90 group-hover:opacity-100 transition-opacity" />
@@ -243,7 +239,7 @@ function Home() {
             </Link>
 
             <Link
-              to="/best-face-moisturizer-india"
+              href="/best-face-moisturizer-india"
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-indigo-500 opacity-90 group-hover:opacity-100 transition-opacity" />
@@ -265,7 +261,7 @@ function Home() {
             </Link>
 
             <Link
-              to="/best-face-toner-india"
+              href="/best-face-toner-india"
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-emerald-500 opacity-90 group-hover:opacity-100 transition-opacity" />
@@ -287,7 +283,7 @@ function Home() {
             </Link>
 
             <Link
-              to="/best-eye-cream-india"
+              href="/best-eye-cream-india"
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-violet-500 to-purple-500 opacity-90 group-hover:opacity-100 transition-opacity" />
@@ -309,7 +305,7 @@ function Home() {
             </Link>
 
             <Link
-              to="/best-exfoliator-india"
+              href="/best-exfoliator-india"
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-red-500 opacity-90 group-hover:opacity-100 transition-opacity" />
@@ -331,7 +327,7 @@ function Home() {
             </Link>
 
             <Link
-              to="/best-face-oil-india"
+              href="/best-face-oil-india"
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-yellow-500 to-amber-500 opacity-90 group-hover:opacity-100 transition-opacity" />
@@ -416,8 +412,8 @@ function Home() {
                     <div className="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-gray-200 z-20 py-2">
                       <button
                         onClick={() => {
-                          setSortBy('default');
-                          setIsFilterOpen(false);
+                          setSortBy('default')
+                          setIsFilterOpen(false)
                         }}
                         className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${
                           sortBy === 'default'
@@ -429,8 +425,8 @@ function Home() {
                       </button>
                       <button
                         onClick={() => {
-                          setSortBy('a-z');
-                          setIsFilterOpen(false);
+                          setSortBy('a-z')
+                          setIsFilterOpen(false)
                         }}
                         className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${
                           sortBy === 'a-z'
@@ -442,8 +438,8 @@ function Home() {
                       </button>
                       <button
                         onClick={() => {
-                          setSortBy('price-low-high');
-                          setIsFilterOpen(false);
+                          setSortBy('price-low-high')
+                          setIsFilterOpen(false)
                         }}
                         className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${
                           sortBy === 'price-low-high'
@@ -455,8 +451,8 @@ function Home() {
                       </button>
                       <button
                         onClick={() => {
-                          setSortBy('price-high-low');
-                          setIsFilterOpen(false);
+                          setSortBy('price-high-low')
+                          setIsFilterOpen(false)
                         }}
                         className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${
                           sortBy === 'price-high-low'
@@ -468,8 +464,8 @@ function Home() {
                       </button>
                       <button
                         onClick={() => {
-                          setSortBy('rating');
-                          setIsFilterOpen(false);
+                          setSortBy('rating')
+                          setIsFilterOpen(false)
                         }}
                         className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${
                           sortBy === 'rating'
@@ -556,10 +552,10 @@ function Home() {
         <div className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-8 mb-12 border-2 border-rose-100">
           <div className="text-center mb-8">
             <h3 className="text-3xl font-bold text-gray-900 mb-3">
-              Why You Don't Need to Search Online Anymore
+              Why You Don&apos;t Need to Search Online Anymore
             </h3>
             <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-              We've already done the hard work. Our team compares products, analyzes reviews, 
+              We&apos;ve already done the hard work. Our team compares products, analyzes reviews, 
               checks prices, and tests ingredients—so you can make confident decisions in minutes, not hours.
             </p>
           </div>
@@ -626,8 +622,6 @@ function Home() {
         </div>
       </div>
     </div>
-    </>
-  );
+  )
 }
 
-export default Home;
