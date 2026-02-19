@@ -1,10 +1,11 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Calendar, Clock, ArrowLeft, BookOpen, ExternalLink } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 
 function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
+  const location = useLocation();
   const post = blogPosts.find(p => p.slug === slug);
 
   if (!post) {
@@ -48,6 +49,13 @@ function BlogPost() {
   const formatContent = (content: string) => {
     let formatted = content;
 
+    // If we have structured FAQs, remove the "## FAQs" section from the main content
+    // so we can render a nicer FAQ section separately.
+    if (post.faqs && post.faqs.length > 0) {
+      // Remove from "## FAQs" until the next header (## / #) or end of content.
+      formatted = formatted.replace(/\n## FAQs[\s\S]*?(?=\n## |\n# |$)/, '\n');
+    }
+
     // Headers
     formatted = formatted.replace(/^### (.*$)/gim, '<h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">$1</h3>');
     formatted = formatted.replace(/^## (.*$)/gim, '<h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">$1</h2>');
@@ -79,11 +87,58 @@ function BlogPost() {
     ? blogPosts.filter(p => post.relatedPosts?.includes(p.slug))
     : [];
 
+  const canonicalUrl = `https://theglowpsychology.com${location.pathname}`;
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      '@type': 'Organization',
+      name: 'The Glow Psychology',
+    },
+    articleSection: post.category,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': canonicalUrl,
+    },
+  };
+
+  const faqSchema =
+    post.faqs && post.faqs.length
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: post.faqs.map((faq) => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: faq.answer,
+            },
+          })),
+        }
+      : null;
+
   return (
     <>
       <Helmet>
         <title>{post.title} | Beauty Blog</title>
         <meta name="description" content={post.description} />
+        <link rel="canonical" href={canonicalUrl} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        {faqSchema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          />
+        )}
       </Helmet>
       <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
         <div className="max-w-4xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-12">
@@ -130,6 +185,29 @@ function BlogPost() {
               dangerouslySetInnerHTML={{ __html: formatContent(post.content) }}
             />
           </article>
+
+          {/* FAQs (Better UI) */}
+          {post.faqs && post.faqs.length > 0 && (
+            <div className="mt-12 sm:mt-16 bg-white rounded-2xl shadow-lg p-6 sm:p-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">FAQs</h2>
+              <div className="space-y-4">
+                {post.faqs.map((faq, idx) => (
+                  <details
+                    key={`${faq.question}-${idx}`}
+                    className="group rounded-xl border border-gray-200 bg-gray-50 px-4 sm:px-5 py-3 sm:py-4"
+                  >
+                    <summary className="cursor-pointer list-none font-semibold text-gray-900 flex items-start justify-between gap-3">
+                      <span className="leading-snug">{faq.question}</span>
+                      <span className="text-gray-400 group-open:rotate-180 transition-transform select-none">▾</span>
+                    </summary>
+                    <div className="mt-3 text-sm sm:text-base text-gray-700 leading-relaxed">
+                      {faq.answer}
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Related Products */}
           {post.relatedProducts && post.relatedProducts.length > 0 && (
@@ -198,4 +276,5 @@ function BlogPost() {
 }
 
 export default BlogPost;
+
 
