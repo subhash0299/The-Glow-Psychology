@@ -85,18 +85,6 @@ export default function Navbar() {
                 )}
               </Link>
 
-              <Link
-                href="/blog"
-                className={`font-medium transition-colors relative ${
-                  pathname.startsWith('/blog') ? 'text-rose-600' : 'text-gray-700 hover:text-rose-500'
-                }`}
-              >
-                Blog
-                {pathname.startsWith('/blog') && (
-                  <div className="absolute -bottom-[1.35rem] left-0 right-0 h-0.5 bg-rose-600" />
-                )}
-              </Link>
-
               {/* Face Care Dropdown */}
               <div ref={faceCareRef} className="relative">
                 <button
@@ -164,6 +152,19 @@ export default function Navbar() {
                   </div>
                 )}
               </div>
+
+              {/* Skincare Guides (Blog) */}
+              <Link
+                href="/blog"
+                className={`font-medium transition-colors relative ${
+                  pathname.startsWith('/blog') ? 'text-rose-600' : 'text-gray-700 hover:text-rose-500'
+                }`}
+              >
+                Skincare Guides
+                {pathname.startsWith('/blog') && (
+                  <div className="absolute -bottom-[1.35rem] left-0 right-0 h-0.5 bg-rose-600" />
+                )}
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -192,16 +193,6 @@ export default function Navbar() {
                 }`}
               >
                 Home
-              </Link>
-
-              <Link
-                href="/blog"
-                onClick={() => setIsMenuOpen(false)}
-                className={`block py-2 px-4 rounded-lg font-medium transition-colors ${
-                  pathname.startsWith('/blog') ? 'bg-rose-50 text-rose-600' : 'text-gray-700 hover:bg-gray-50'
-                }`}
-              >
-                Blog
               </Link>
 
               {/* Face Care Section */}
@@ -237,6 +228,19 @@ export default function Navbar() {
                   Hair Care (Coming Soon)
                 </div>
               </div>
+
+              {/* Skincare Guides (Blog) */}
+              <div className="pt-2 border-t border-gray-100">
+                <Link
+                  href="/blog"
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`block py-2 px-4 rounded-lg font-semibold transition-colors ${
+                    pathname.startsWith('/blog') ? 'text-rose-600' : 'text-gray-700 hover:bg-gray-50'
+                  }`}
+                >
+                  Skincare Guides
+                </Link>
+              </div>
             </div>
           </div>
         )}
@@ -244,12 +248,40 @@ export default function Navbar() {
 
       {/* Secondary Navigation for Face Care Pages */}
       {isFaceCarePage && (
-        <div className="bg-gray-50 border-b border-gray-200 overflow-x-auto">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-1 py-2 min-w-max">
+        <div className="bg-gray-50 border-b border-gray-200">
+          <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            {/* Mobile: Grid layout showing all at once */}
+            <div className="grid grid-cols-3 gap-1.5 py-2 sm:hidden">
               <Link
                 href="/face-care"
-                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap ${
+                className={`px-2 py-1.5 rounded-lg text-xs font-medium text-center transition-colors ${
+                  pathname === '/face-care'
+                    ? 'bg-rose-600 text-white'
+                    : 'bg-white text-gray-700 border border-gray-200'
+                }`}
+              >
+                All
+              </Link>
+              {faceCareLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  href={link.path}
+                  className={`px-2 py-1.5 rounded-lg text-xs font-medium text-center transition-colors ${
+                    isActive(link.path)
+                      ? 'bg-rose-600 text-white'
+                      : 'bg-white text-gray-700 border border-gray-200'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+            
+            {/* Desktop: Horizontal pill layout */}
+            <div className="hidden sm:flex items-center gap-2 py-2">
+              <Link
+                href="/face-care"
+                className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap ${
                   pathname === '/face-care'
                     ? 'bg-rose-600 text-white'
                     : 'text-gray-600 hover:bg-gray-200'
@@ -261,7 +293,7 @@ export default function Navbar() {
                 <Link
                   key={link.path}
                   href={link.path}
-                  className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap ${
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap ${
                     isActive(link.path)
                       ? 'bg-rose-600 text-white'
                       : 'text-gray-600 hover:bg-gray-200'

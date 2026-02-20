@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Sparkles, Star, Zap } from 'lucide-react'
-import ProductCard from '@/components/ProductCard'
+import SkinTypeFilter from '@/components/SkinTypeFilter'
 import { vitaminCSerums } from '@/data/products'
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function VitaminCSerum() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="bg-gradient-to-br from-pink-500 to-rose-500 text-white">
+      <div className="hidden sm:block bg-gradient-to-br from-pink-500 to-rose-500 text-white">
         <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
           <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
             <Sparkles className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10" />
@@ -45,21 +45,11 @@ export default function VitaminCSerum() {
       </div>
 
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-12">
-        <div className="mb-6 sm:mb-8">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 px-2">
-            Top Face Serums for Every Budget
-          </h2>
-          <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 px-2">
-            From 10% to 20% concentration, these face serums are formulated for Indian
-            skin types and climate. Find your perfect match for brighter, healthier skin.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6 mb-8 sm:mb-12">
-          {vitaminCSerums.map((product, index) => (
-            <ProductCard key={index} product={product} />
-          ))}
-        </div>
+        <SkinTypeFilter
+          products={vitaminCSerums}
+          title="Top Face Serums for Every Budget"
+          description="From 10% to 20% concentration, these face serums are formulated for Indian skin types and climate. Find your perfect match for brighter, healthier skin."
+        />
 
         <div className="bg-white rounded-2xl shadow-sm p-4 sm:p-6 md:p-8 mb-8 sm:mb-12">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">

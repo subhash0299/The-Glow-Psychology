@@ -134,7 +134,7 @@ export default function FaceCarePage() {
           Shop by Category
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {faceCategories.map((category) => (
             <Link
               key={category.path}
@@ -149,9 +149,6 @@ export default function FaceCarePage() {
                   fill
                   className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute top-3 right-3 bg-rose-600 text-white text-xs font-medium px-2 py-1 rounded-full">
-                  {category.productCount} Products
-                </div>
               </div>
 
               {/* Content */}

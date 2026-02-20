@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Sun, Shield, Sparkles, Heart, Star, ExternalLink, BookOpen } from 'lucide-react'
-import ProductCard from '@/components/ProductCard'
+import { Sun, Shield, Sparkles, Heart, ExternalLink, BookOpen } from 'lucide-react'
+import SkinTypeFilter from '@/components/SkinTypeFilter'
 import { sunscreens } from '@/data/products'
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function Sunscreen() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="bg-gradient-to-br from-amber-500 to-orange-500 text-white">
+      <div className="hidden sm:block bg-gradient-to-br from-amber-500 to-orange-500 text-white">
         <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
           <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
             <Sun className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10" />
@@ -46,21 +46,11 @@ export default function Sunscreen() {
       </div>
 
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-12">
-        <div className="mb-6 sm:mb-8">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 px-2">
-            Top Sunscreen Picks for Indian Skin
-          </h2>
-          <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 px-2">
-            These affordable sunscreens are specially curated for Indian skin types, offering
-            matte finishes, no white cast, and SPF 50 protection perfect for our tropical climate.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6 mb-8 sm:mb-12">
-          {sunscreens.map((product, index) => (
-            <ProductCard key={index} product={product} />
-          ))}
-        </div>
+        <SkinTypeFilter
+          products={sunscreens}
+          title="Top Sunscreen Picks for Indian Skin"
+          description="These affordable sunscreens are specially curated for Indian skin types, offering matte finishes, no white cast, and SPF 50 protection perfect for our tropical climate."
+        />
 
         <div className="bg-white rounded-2xl shadow-sm p-4 sm:p-6 md:p-8 mb-8 sm:mb-12">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
