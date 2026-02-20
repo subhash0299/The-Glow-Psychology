@@ -12,6 +12,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
+  // Category landing pages
+  const categoryPages = [
+    {
+      url: `${baseUrl}/face-care`,
+      lastModified: new Date('2026-02-20'),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+  ]
+
   // Product category pages
   const productPages = [
     {
@@ -77,6 +87,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.8,
     },
+    ...categoryPages,
     ...productPages,
     ...blogUrls,
   ]
