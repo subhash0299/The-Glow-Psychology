@@ -948,6 +948,238 @@ A good skincare routine doesn't have to be expensive. Start with the basics: cle
 
 All products are tested, reviewed, and perfect for building an affordable skincare routine in India!
     `
+  },
+  {
+    slug: 'best-sunscreen-oily-skin-india',
+    title: 'Best Sunscreen for Oily Skin in India (2026 Expert Guide)',
+    description: 'Best sunscreen for oily skin in India (2026). Find matte, non-greasy SPF 50 sunscreens for acne-prone skin. No white cast, oil-free, budget-friendly options under ₹500.',
+    category: 'Skincare Guide',
+    date: '2026-02-20',
+    readTime: 7,
+    relatedProducts: ['/best-sunscreen-india', '/best-face-cleanser-india', '/best-face-moisturizer-india', '/best-vitamin-c-serum-india'],
+    relatedPosts: ['skincare-routine-oily-skin-india', 'how-to-choose-sunscreen-indian-weather'],
+    faqs: [
+      {
+        question: 'Which sunscreen is best for oily acne-prone skin in India?',
+        answer: 'Look for SPF 50 PA++++, oil-free, non-comedogenic, and gel-based formulas. Avoid heavy cream sunscreens that can clog pores and cause breakouts.',
+      },
+      {
+        question: 'Can sunscreen cause pimples?',
+        answer: 'Yes — if it is heavy, comedogenic, or not removed properly at night. Always double cleanse using a gentle cleanser to remove sunscreen completely.',
+      },
+      {
+        question: 'Is gel sunscreen better for oily skin?',
+        answer: 'Yes. Gel sunscreens absorb faster and control shine better in humid Indian weather. They feel lightweight and don\'t leave a greasy residue.',
+      },
+      {
+        question: 'How often should I reapply sunscreen in India?',
+        answer: 'Every 2–3 hours if outdoors. If you\'re mostly indoors, reapply once during lunchtime for adequate protection.',
+      },
+    ],
+    content: `
+# Best Sunscreen for Oily Skin in India (2026 Expert Guide)
+
+Looking for the **best sunscreen for oily skin in India**? If you have oily or acne-prone skin, finding the right sunscreen can feel impossible. Most sunscreens feel greasy, cause breakouts, leave white cast, or make your face look shiny in India's hot and humid climate.
+
+This guide will help you choose the perfect **matte, non-greasy, SPF 50 sunscreen** that protects your skin without clogging pores.
+
+---
+
+## Why Oily Skin Needs a Special Sunscreen in India
+
+India's weather is different.
+
+- High humidity
+- Intense UV exposure
+- Pollution
+- Sweating
+
+If you use the wrong sunscreen, it can:
+- Increase oil production
+- Cause acne breakouts
+- Block pores
+- Make makeup slide off
+
+That's why oily skin needs a **lightweight, oil-free, non-comedogenic sunscreen**.
+
+If you haven't built your routine yet, read our complete guide on [best skincare routine for oily skin in India](/blog/skincare-routine-oily-skin-india).
+
+---
+
+## What to Look for in the Best Sunscreen for Oily Skin
+
+### 1️⃣ SPF 50 with PA++++
+
+Indian sun is strong. SPF 30 is not enough for daily outdoor exposure.  
+Choose **SPF 50 PA++++** for maximum UVA & UVB protection.
+
+---
+
+### 2️⃣ Matte or Gel-Based Formula
+
+Avoid:
+- Cream-heavy formulas
+- Thick moisturizing sunscreens
+
+Look for:
+- Gel sunscreen
+- Water-based formula
+- Oil-free texture
+
+---
+
+### 3️⃣ Non-Comedogenic & Acne-Safe
+
+If you have acne-prone skin, your sunscreen must say:
+
+- Non-comedogenic
+- Oil-free
+- Dermatologically tested
+
+Pair it with a gentle [best face wash for oily skin in India](/best-face-cleanser-india) to prevent clogged pores.
+
+---
+
+### 4️⃣ No White Cast (Important for Indian Skin)
+
+Many mineral sunscreens leave a white cast on medium to deeper Indian skin tones.
+
+Choose:
+- Hybrid sunscreen
+- Invisible gel sunscreen
+- Silicone-based matte sunscreen
+
+---
+
+## 🏆 Best Sunscreen for Oily Skin in India (Top Picks 2026)
+
+### 1. Matte Gel Sunscreen (SPF 50 PA++++)
+- Ultra-light texture
+- Sweat-resistant
+- Perfect for humid cities like Mumbai & Chennai
+- No white cast
+
+Best for: Daily office / college use
+
+---
+
+### 2. Silicone-Based Sunscreen
+- Primer-like finish
+- Controls shine for 5–6 hours
+- Ideal under makeup
+
+Best for: Events & outdoor days
+
+---
+
+### 3. Acne-Safe Hybrid Sunscreen
+- Zinc + modern UV filters
+- Gentle on sensitive skin
+- Suitable for acne-prone users
+
+Best for: Sensitive oily skin
+
+---
+
+If you're also targeting pigmentation, consider pairing sunscreen with a [best vitamin C serum in India](/best-vitamin-c-serum-india).
+
+---
+
+## How to Apply Sunscreen Correctly (Most People Do It Wrong)
+
+1. Use **2 finger-length amount**
+2. Apply after moisturizer
+3. Reapply every 2–3 hours
+4. Don't forget ears & neck
+
+For full routine guidance, read:
+👉 [Best skincare routine for oily skin in India](/blog/skincare-routine-oily-skin-india)
+
+---
+
+## Common Mistakes to Avoid
+
+❌ Skipping sunscreen because skin is oily  
+❌ Using moisturizer + heavy sunscreen combo  
+❌ Not reapplying  
+❌ Using SPF 30 in harsh sun  
+❌ Rubbing aggressively  
+
+---
+
+## Can Oily Skin Skip Moisturizer If Using Sunscreen?
+
+No.
+
+Even oily skin needs hydration. Use a lightweight gel-based option like those listed in our guide to the [best moisturizer for oily skin in India](/best-face-moisturizer-india).
+
+Skipping moisturizer can increase oil production.
+
+---
+
+## Budget-Friendly Sunscreens Under ₹500
+
+You don't need to spend ₹1000+.
+
+Many Indian brands now offer:
+- Matte finish
+- SPF 50
+- Oil-control formula
+- Non-greasy texture
+
+Perfect for students and beginners building a routine under ₹1000.
+
+👉 See our top picks: [Best Sunscreen Under ₹500 in India](/best-sunscreen-india)
+
+---
+
+## FAQs – Best Sunscreen for Oily Skin in India
+
+### Q1: Which sunscreen is best for oily acne-prone skin in India?
+Look for SPF 50 PA++++, oil-free, non-comedogenic, and gel-based formulas.
+
+---
+
+### Q2: Can sunscreen cause pimples?
+Yes — if it is heavy, comedogenic, or not removed properly at night. Always double cleanse using a gentle cleanser.
+
+---
+
+### Q3: Is gel sunscreen better for oily skin?
+Yes. Gel sunscreens absorb faster and control shine better in humid Indian weather.
+
+---
+
+### Q4: How often should I reapply sunscreen in India?
+Every 2–3 hours if outdoors.
+
+---
+
+## Final Verdict
+
+The **best sunscreen for oily skin in India** is one that:
+
+✔ SPF 50 PA++++  
+✔ Matte finish  
+✔ Oil-free & non-comedogenic  
+✔ No white cast  
+✔ Lightweight texture  
+
+When chosen correctly, sunscreen won't make your skin oily — it will protect it from acne marks, pigmentation, and premature aging.
+
+---
+
+## Related Guides
+
+- [Best Face Wash for Oily Skin in India](/best-face-cleanser-india)
+- [Best Moisturizer for Oily Skin in India](/best-face-moisturizer-india)
+- [Best Vitamin C Serum in India](/best-vitamin-c-serum-india)
+- [Complete Skincare Routine for Oily Skin](/blog/skincare-routine-oily-skin-india)
+
+---
+
+**Pro Tip:** Consistency beats expensive products. Use sunscreen daily, even indoors.
+    `
   }
 ];
 
