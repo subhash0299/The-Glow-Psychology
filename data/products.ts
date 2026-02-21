@@ -779,6 +779,99 @@ export const faceWashes: Product[] = [
     skinType: "Oily Skin"
   },
   {
+    name: "Ayurvedic Purifying Face Wash with Saffron & Neem | For Normal to Oily Skin | Sulphate Free",
+    brand: "Forest Essentials",
+    rating: "4.4 (4,260+)",
+    price: "₹495",
+    mrp: "₹495",
+    discountPercentage: 0,
+    images: [
+      "/cleanser/Forest-Essentials/image.png",
+      "/cleanser/Forest-Essentials/image copy.png",
+      "/cleanser/Forest-Essentials/image copy 2.png",
+      "/cleanser/Forest-Essentials/image copy 3.png"
+    ],
+    link: "https://amzn.to/4b6AHWP",
+    features: ["Ayurvedic formula", "Sulphate-free", "With Saffron & Neem"],
+    bestFor: "Best for Normal to Oily Skin",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Foaming Cleanser For Normal To Oily Skin (473ml) - Dermatologist-Developed | Non-Comedogenic & Fragrance-Free",
+    brand: "CeraVe",
+    rating: "4.3 (52,731+)",
+    price: "₹1,485",
+    mrp: "₹1,650",
+    discountPercentage: 10,
+    images: [
+      "/cleanser/CeraVe/image.png",
+      "/cleanser/CeraVe/image copy.png",
+      "/cleanser/CeraVe/image copy 2.png"
+    ],
+    link: "https://amzn.to/4s0yym7",
+    features: ["Dermatologist-developed", "Non-comedogenic", "Fragrance-free"],
+    bestFor: "Best for Oily & Acne-Prone Skin",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Deep Cleansing Facial Foam Face Wash | Removes Dirt, Impurities & Excess Oil | 70ml",
+    brand: "Ethiglo",
+    rating: "4.2 (13,049+)",
+    price: "₹234",
+    mrp: "₹260",
+    discountPercentage: 10,
+    images: [
+      "/cleanser/Ethiglo/image.png",
+      "/cleanser/Ethiglo/image copy.png",
+      "/cleanser/Ethiglo/image copy 2.png",
+      "/cleanser/Ethiglo/image copy 3.png",
+      "/cleanser/Ethiglo/image copy 4.png"
+    ],
+    link: "https://amzn.to/4s2Lfgi",
+    features: ["Deep cleansing", "Removes excess oil", "Suitable for all skin types"],
+    bestFor: "Best for All Skin Types",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Oil Free Acne Wash | 2% Salicylic Acid Deep Cleansing Face Wash | 175ml",
+    brand: "Neutrogena",
+    rating: "4.2 (10,673+)",
+    price: "₹642",
+    mrp: "₹845",
+    discountPercentage: 24,
+    images: [
+      "/cleanser/Neutrogena/image.png",
+      "/cleanser/Neutrogena/image copy.png",
+      "/cleanser/Neutrogena/image copy 2.png",
+      "/cleanser/Neutrogena/image copy 3.png",
+      "/cleanser/Neutrogena/image copy 4.png"
+    ],
+    link: "https://amzn.to/4rujOvS",
+    features: ["2% Salicylic Acid", "Alcohol-free", "Non-comedogenic"],
+    bestFor: "Best for Acne-Prone Skin",
+    skinType: "Acne-Prone Skin"
+  },
+  {
+    name: "1% Encapsulated Salicylic Acid Foaming Face Wash | Controls Oil & Fights Acne | 110ml",
+    brand: "Plum",
+    rating: "4.2 (1,473+)",
+    price: "₹253",
+    mrp: "₹324",
+    discountPercentage: 22,
+    images: [
+      "/cleanser/Plum1/image.png",
+      "/cleanser/Plum1/image copy.png",
+      "/cleanser/Plum1/image copy 2.png",
+      "/cleanser/Plum1/image copy 3.png",
+      "/cleanser/Plum1/image copy 4.png",
+      "/cleanser/Plum1/image copy 5.png"
+    ],
+    link: "https://amzn.to/4b0JA54",
+    features: ["1% Encapsulated Salicylic Acid", "With Glycolic Acid & AHAs", "Controls oil"],
+    bestFor: "Best for Acne-Prone Skin",
+    skinType: "All Skin Types"
+  },
+  {
     name: "Garnier Bright Complete Vitamin C Face Wash | Brightening & Glowing Skin | Daily Cleanser | 160g",
     brand: "Garnier",
     rating: "4.2 (13,508)",
@@ -813,7 +906,7 @@ export const faceWashes: Product[] = [
     link: "https://amzn.to/4kH3Rjl",
     features: ["Neem Extract", "Anti-Acne", "Gentle Cleanser"],
     bestFor: "Best for Acne-Prone Skin",
-    skinType: "Oily & Acne-Prone Skin"
+    skinType: "Acne-Prone Skin"
   },
   {
     name: "Cetaphil Gentle Skin Hydrating Face Wash 118ml | Niacinamide & Vitamin B5 | Paraben & Sulphate Free",
@@ -850,7 +943,7 @@ export const faceWashes: Product[] = [
     link: "https://amzn.to/40fcMPH",
     features: ["2% Salicylic Acid", "2% Niacinamide", "Oil Control"],
     bestFor: "Best for Active Acne",
-    skinType: "Oily & Acne-Prone Skin"
+    skinType: "Acne-Prone Skin"
   },
   {
     name: "The Face Shop Rice Water Bright Foaming Face Wash | Korean Skincare | 100ml",
@@ -887,7 +980,7 @@ export const faceWashes: Product[] = [
     link: "https://amzn.to/4kJn5VG",
     features: ["Deep Cleansing", "pH Balanced", "Non-Irritating"],
     bestFor: "Best for Oily Skin",
-    skinType: "Oily & Acne-Prone Skin"
+    skinType: "Acne-Prone Skin"
   },
   {
     name: "Biotique Fruit Brightening Face Wash | 100% Botanical Extracts | 200ml",
@@ -1142,6 +1235,292 @@ export const eyeCreams: Product[] = [
     link: "https://amzn.to/4rn77mP",
     features: ["Vitamin K", "Retinal", "Caffeine"],
     bestFor: "Best for Anti-Aging",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Revive Eye Serum with Ginseng & Retinal (30ml) | Anti-Aging Korean Eye Cream for Dark Circles & Fine Lines",
+    brand: "Beauty of Joseon",
+    rating: "4.2 (14,575+)",
+    price: "₹1,207",
+    mrp: "₹1,420",
+    discountPercentage: 15,
+    images: [
+      "/eyecream/Beauty-of-Joseon/image.png",
+      "/eyecream/Beauty-of-Joseon/image copy.png",
+      "/eyecream/Beauty-of-Joseon/image copy 2.png",
+      "/eyecream/Beauty-of-Joseon/image copy 3.png",
+      "/eyecream/Beauty-of-Joseon/image copy 4.png",
+      "/eyecream/Beauty-of-Joseon/image copy 5.png"
+    ],
+    link: "https://amzn.to/472tk13",
+    features: ["With Ginseng & Retinal", "Anti-aging formula", "Targets dark circles & fine lines"],
+    bestFor: "Best for Anti-Aging & Wrinkles",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Squalane Under Eye Cream with Phyto-Retinol & Caffeine | For Dark Circles, Wrinkles & Puffy Eyes | 15ml",
+    brand: "Pilgrim",
+    rating: "4.0 (1,945+)",
+    price: "₹319",
+    mrp: "₹399",
+    discountPercentage: 20,
+    images: [
+      "/eyecream/Pilgrim/image.png",
+      "/eyecream/Pilgrim/image copy.png",
+      "/eyecream/Pilgrim/image copy 2.png",
+      "/eyecream/Pilgrim/image copy 3.png",
+      "/eyecream/Pilgrim/image copy 4.png"
+    ],
+    link: "https://amzn.to/4tINLdn",
+    features: ["Plant-derived Squalane", "With Phyto-Retinol & Caffeine", "Reduces puffiness & dark circles"],
+    bestFor: "Best for Puffy Eyes & Dark Circles",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Bio-Peptide Under Eye Gel | Reduces Dark Circles, Puffiness & Wrinkles",
+    brand: "Cureskin",
+    rating: "4.2 (1,922+)",
+    price: "₹545",
+    mrp: "₹790",
+    discountPercentage: 31,
+    images: [
+      "/eyecream/Cureskin/image.png",
+      "/eyecream/Cureskin/image copy.png",
+      "/eyecream/Cureskin/image copy 2.png",
+      "/eyecream/Cureskin/image copy 3.png",
+      "/eyecream/Cureskin/image copy 4.png"
+    ],
+    link: "https://amzn.to/4qM2Cko",
+    features: ["Bio-Peptide formula", "Reduces dark circles", "Helps with puffiness & wrinkles"],
+    bestFor: "Best for Dark Circles",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Bio Seaweed Revitalizing Anti Fatigue Eye Gel | Reduces Dark Circles & Puffiness | 15g",
+    brand: "Biotique",
+    rating: "4.0 (9,862+)",
+    price: "₹139",
+    mrp: "₹240",
+    discountPercentage: 42,
+    images: [
+      "/eyecream/Biotique/image.png",
+      "/eyecream/Biotique/image copy.png",
+      "/eyecream/Biotique/image copy 2.png",
+      "/eyecream/Biotique/image copy 3.png"
+    ],
+    link: "https://amzn.to/4c7yMDl",
+    features: ["With Seaweed, Nutmeg & Honey", "Reduces fatigue", "Lightweight gel formula"],
+    bestFor: "Best Budget Eye Gel",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Pomegranate Retinol + Caffeine Eye Cream | Smoothens Fine Lines & Fades Dark Circles | 20ml",
+    brand: "Dot & Key",
+    rating: "4.0 (719+)",
+    price: "₹396",
+    mrp: "₹495",
+    discountPercentage: 20,
+    images: [
+      "/eyecream/DotKey/image.png",
+      "/eyecream/DotKey/image copy.png",
+      "/eyecream/DotKey/image copy 2.png",
+      "/eyecream/DotKey/image copy 3.png",
+      "/eyecream/DotKey/image copy 4.png"
+    ],
+    link: "https://amzn.to/4b1Y0Sz",
+    features: ["With Retinol & Caffeine", "Improves skin elasticity", "Prevents dryness"],
+    bestFor: "Best for Fine Lines & Wrinkles",
+    skinType: "All Skin Types"
+  }
+];
+
+export const lipBalms: Product[] = [
+  // Lip balm products will be added here
+  {
+    name: "SUGAR POP Nourishing Lip Balm | Castor Oil, Shea Butter & Avocado Oil | Hydrating | 4.5gm - 01 Mint",
+    brand: "SUGAR POP",
+    rating: "4.1 (8,714+)",
+    price: "₹80",
+    mrp: "₹148",
+    discountPercentage: 46,
+    images: [
+      "/lip-balm/SUGAR-POP/image.png",
+      "/lip-balm/SUGAR-POP/image copy.png",
+      "/lip-balm/SUGAR-POP/image copy 2.png",
+      "/lip-balm/SUGAR-POP/image copy 3.png",
+      "/lip-balm/SUGAR-POP/image copy 4.png"
+    ],
+    link: "https://amzn.to/4qQZUdE",
+    features: ["With Castor Oil", "Shea Butter & Avocado Oil", "Hydrating formula"],
+    bestFor: "Best Budget Lip Balm",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "WishCare Tinted Lip Balm SPF 50 PA+++ | Brightening Lip Balm for Dark Lips | Kojic Acid & Niacinamide | For Women | 5g",
+    brand: "WishCare",
+    rating: "4.2 (10,427+)",
+    price: "₹236",
+    mrp: "₹299",
+    discountPercentage: 21,
+    images: [
+      "/lip-balm/WishCare/image.png",
+      "/lip-balm/WishCare/image copy.png",
+      "/lip-balm/WishCare/image copy 2.png",
+      "/lip-balm/WishCare/image copy 3.png",
+      "/lip-balm/WishCare/image copy 4.png"
+    ],
+    link: "https://amzn.to/4l6OyB3",
+    features: ["SPF 50 PA+++", "With Kojic Acid & Niacinamide", "Brightens dark lips"],
+    bestFor: "Best for Pigmented Lips",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Laneige Lip Sleeping Mask | Moisturizing Lip Treatment with Vitamin C + Shea Butter for Soft Hydrated Lips | Overnight Repair | Lip Balm For Dry Chapped Lips| Lasting Hydration",
+    brand: "Laneige",
+    rating: "4.4 (14,114+)",
+    price: "₹540",
+    mrp: "₹600",
+    discountPercentage: 10,
+    images: [
+      "/lip-balm/Laneige/image.png",
+      "/lip-balm/Laneige/image copy.png",
+      "/lip-balm/Laneige/image copy 2.png",
+      "/lip-balm/Laneige/image copy 3.png"
+    ],
+    link: "https://amzn.to/4snD4vp",
+    features: ["Vitamin C + Shea Butter", "Overnight Repair", "Long-lasting Hydration"],
+    bestFor: "Best for Dry & Chapped Lips",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "DOT & KEY Lip Plumping Mask With Shea Butter & Vitamin C + E For Naturally Glowing Lips | Smoothes Flaky & Dry Lips | LipMask For Soft,Smooth & Plump | (Lingonberry) |15Ml",
+    brand: "Dot & Key",
+    rating: "4.1 (6,876+)",
+    price: "₹207",
+    mrp: "₹259",
+    discountPercentage: 20,
+    images: [
+      "/lip-balm/DotKey/image.png",
+      "/lip-balm/DotKey/image copy.png",
+      "/lip-balm/DotKey/image copy 2.png",
+      "/lip-balm/DotKey/image copy 3.png"
+    ],
+    link: "https://amzn.to/4b6J191",
+    features: ["Shea Butter", "Vitamin C + E", "Plumping & Smoothing"],
+    bestFor: "Best for Plump Lips",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Minimalist Lip Treatment Balm for Pigmented & Dark Lips | 8% L-Ascorbic Acid with Vitamin E, Radianskin & Glycerine | For Women & Men | 12 gm",
+    brand: "Minimalist",
+    rating: "3.8 (3,919+)",
+    price: "₹399",
+    mrp: "₹399",
+    discountPercentage: 0,
+    images: [
+      "/lip-balm/Minimalist/image.png",
+      "/lip-balm/Minimalist/image copy.png",
+      "/lip-balm/Minimalist/image copy 2.png",
+      "/lip-balm/Minimalist/image copy 3.png"
+    ],
+    link: "https://amzn.to/3ZOgdwB",
+    features: ["8% L-Ascorbic Acid", "Vitamin E & Radianskin", "For Pigmented Lips"],
+    bestFor: "Best for Pigmented & Dark Lips",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "WishCare Ceramide Lip Balm SPF 50 PA+++ | Brightening Lip Balm for Dark Lips | Kojic Acid & Niacinamide | Natural & Untinted | For Women & Men | 5g",
+    brand: "WishCare",
+    rating: "4.3 (4,369+)",
+    price: "₹244",
+    mrp: "₹298",
+    discountPercentage: 18,
+    images: [
+      "/lip-balm/WishCare1/image.png",
+      "/lip-balm/WishCare1/image copy.png",
+      "/lip-balm/WishCare1/image copy 2.png",
+      "/lip-balm/WishCare1/image copy 3.png",
+      "/lip-balm/WishCare1/image copy 4.png"
+    ],
+    link: "https://amzn.to/4qRQFdd",
+    features: ["SPF 50 PA+++", "Ceramide + Kojic Acid + Niacinamide", "Natural & Untinted"],
+    bestFor: "Best for Pigmented & Dark Lips",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Hyphen Tinted Lip Balm - Hazel | 1% Vitamin E, 2% Squalane & Peptides | Brightening Lip Balm for Dark Lips | 24h Moisturization & Hydration for Dry & Chapped Lips - 10 g, Brown",
+    brand: "Hyphen",
+    rating: "4.1 (2,277+)",
+    price: "₹375",
+    mrp: "₹399",
+    discountPercentage: 6,
+    images: [
+      "/lip-balm/Hyphen/image.png",
+      "/lip-balm/Hyphen/image copy.png",
+      "/lip-balm/Hyphen/image copy 2.png",
+      "/lip-balm/Hyphen/image copy 3.png",
+      "/lip-balm/Hyphen/image copy 4.png",
+      "/lip-balm/Hyphen/image copy 5.png"
+    ],
+    link: "https://amzn.to/474vNYS",
+    features: ["1% Vitamin E", "2% Squalane & Peptides", "24h Moisturization"],
+    bestFor: "Best Tinted Lip Balm for Dark Lips",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "SUGAR Cosmetics Tipsy Lips Moisturing Balm with Vitamin E, Shea Butter and Jojoba Oil | Tinted Lip Balm with SPF | Lip Protection & Nourishment | 4.5gm - 02 Cosmopolitan",
+    brand: "SUGAR Cosmetics",
+    rating: "4.2 (14,489+)",
+    price: "₹157",
+    mrp: "₹199",
+    discountPercentage: 21,
+    images: [
+      "/lip-balm/SUGAR/image.png",
+      "/lip-balm/SUGAR/image copy.png",
+      "/lip-balm/SUGAR/image copy 2.png",
+      "/lip-balm/SUGAR/image copy 3.png",
+      "/lip-balm/SUGAR/image copy 4.png"
+    ],
+    link: "https://amzn.to/4kQ9JqI",
+    features: ["Vitamin E, Shea Butter & Jojoba Oil", "Tinted Lip Balm with SPF", "Lip Protection & Nourishment"],
+    bestFor: "Best Tinted Lip Balm with SPF",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Laneige Lip Glowy Balm, Moisturizing Treatment for Soft, Smooth and Glowing Lips, Intense Hydration",
+    brand: "Laneige",
+    rating: "4.4 (3,479+)",
+    price: "₹675",
+    mrp: "₹750",
+    discountPercentage: 10,
+    images: [
+      "/lip-balm/Laneige1/image.png",
+      "/lip-balm/Laneige1/image copy.png",
+      "/lip-balm/Laneige1/image copy 2.png",
+      "/lip-balm/Laneige1/image copy 3.png",
+      "/lip-balm/Laneige1/image copy 4.png"
+    ],
+    link: "https://amzn.to/3ZO2lT6",
+    features: ["Intense Hydration", "Glowy Finish", "Moisturizing Treatment"],
+    bestFor: "Best for Glossy Hydration",
+    skinType: "All Skin Types"
+  },
+  {
+    name: "Mamaearth Beetroot Tinted 100% Natural Lip Balm with Beetroot & Beeswax for 12h Moisturized Lips - 2 g | 100% Natural Formula which Provides 12H Moisturization* | Free From Harmful Chemicals & Made Safe Approved",
+    brand: "Mamaearth",
+    rating: "4.0 (4,211+)",
+    price: "₹221",
+    mrp: "₹299",
+    discountPercentage: 26,
+    images: [
+      "/lip-balm/Mamaearth/image.png",
+      "/lip-balm/Mamaearth/image copy.png",
+      "/lip-balm/Mamaearth/image copy 2.png",
+      "/lip-balm/Mamaearth/image copy 3.png"
+    ],
+    link: "https://amzn.to/3Opbmj6",
+    features: ["Beetroot & Beeswax", "12H Moisturization", "100% Natural Formula"],
+    bestFor: "Best Natural Tinted Lip Balm",
     skinType: "All Skin Types"
   }
 ];

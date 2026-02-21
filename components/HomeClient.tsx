@@ -291,10 +291,10 @@ export default function HomeClient() {
                 <Eye className="hidden sm:block w-10 h-10 text-white" />
                 <div>
                   <h3 className="text-sm sm:text-xl font-bold text-white mb-0.5 sm:mb-1">
-                    Eye Creams
+                    Eyes & Lip care
                   </h3>
                   <p className="hidden sm:block text-white/90 text-xs sm:text-sm mb-2 sm:mb-3">
-                    Dark circle care
+                    Eye creams & lip balms
                   </p>
                   <span className="inline-flex items-center text-white text-xs sm:text-sm font-semibold mt-1 sm:mt-0">
                     Explore

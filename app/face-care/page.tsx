@@ -67,8 +67,8 @@ const faceCategories = [
     topBrand: 'Minimalist',
   },
   {
-    title: 'Eye Cream',
-    description: 'Target dark circles, puffiness & fine lines.',
+    title: 'Eyes & Lip care',
+    description: 'Target dark circles, puffiness & fine lines. Plus nourishing lip balms.',
     path: '/best-eye-cream-india',
     image: '/eyecream/Minimalist/image.png',
     productCount: 4,

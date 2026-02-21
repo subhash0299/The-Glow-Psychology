@@ -13,7 +13,7 @@ const faceCareLinks = [
   { path: '/best-face-cleanser-india', label: 'Face Wash' },
   { path: '/best-face-moisturizer-india', label: 'Moisturizer' },
   { path: '/best-face-toner-india', label: 'Toner' },
-  { path: '/best-eye-cream-india', label: 'Eye Cream' },
+  { path: '/best-eye-cream-india', label: 'Eyes & Lip care' },
   { path: '/best-exfoliator-india', label: 'Exfoliator' },
   { path: '/best-face-oil-india', label: 'Face Oil' },
 ]
