@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { Calendar, Clock, ArrowLeft, BookOpen, ExternalLink } from 'lucide-react'
+import { Calendar, Clock, ArrowLeft, BookOpen, ExternalLink, BadgeCheck } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import { blogPosts } from '@/data/blogPosts'
 
@@ -122,7 +122,8 @@ export default function BlogPost({ params }: Props) {
     dateModified: post.date,
     author: {
       '@type': 'Organization',
-      name: 'Glow Finds',
+      name: 'GlowFinds',
+      url: 'https://glowfinds.vercel.app/about',
     },
     articleSection: post.category,
     mainEntityOfPage: {
@@ -185,7 +186,7 @@ export default function BlogPost({ params }: Props) {
             </p>
 
             {/* Meta Information */}
-            <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-sm text-gray-500 pb-6 border-b border-gray-200">
+            <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-sm text-gray-500 pb-4 border-b border-gray-200">
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
                 <span>{formatDate(post.date)}</span>
@@ -195,6 +196,15 @@ export default function BlogPost({ params }: Props) {
                 <span>{post.readTime} min read</span>
               </div>
             </div>
+
+            {/* Methodology badge */}
+            <Link
+              href="/how-we-review"
+              className="mt-4 inline-flex items-center gap-2 text-sm text-rose-600 hover:text-rose-700 font-medium"
+            >
+              <BadgeCheck className="w-4 h-4" />
+              Reviewed using GlowFinds methodology
+            </Link>
           </div>
 
           {/* Content */}

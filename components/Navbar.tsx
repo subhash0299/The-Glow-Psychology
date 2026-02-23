@@ -63,11 +63,11 @@ export default function Navbar() {
                   alt="The Glow Psychology Logo" 
                   width={48}
                   height={48}
-                  className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-cover rounded-full"
+                  className="w-12 h-12 sm:w-10 sm:h-10 md:w-12 md:h-12 object-cover rounded-full"
                 />
               </div>
               <span className="text-base sm:text-lg md:text-xl font-bold bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent">
-                The Glow Psychology
+                GlowFinds India
               </span>
             </Link>
 
@@ -165,6 +165,19 @@ export default function Navbar() {
                   <div className="absolute -bottom-[1.35rem] left-0 right-0 h-0.5 bg-rose-600" />
                 )}
               </Link>
+
+              {/* About */}
+              <Link
+                href="/about"
+                className={`font-medium transition-colors relative ${
+                  pathname === '/about' ? 'text-rose-600' : 'text-gray-700 hover:text-rose-500'
+                }`}
+              >
+                About
+                {pathname === '/about' && (
+                  <div className="absolute -bottom-[1.35rem] left-0 right-0 h-0.5 bg-rose-600" />
+                )}
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -241,6 +254,17 @@ export default function Navbar() {
                   Skincare Guides
                 </Link>
               </div>
+
+              {/* About */}
+              <Link
+                href="/about"
+                onClick={() => setIsMenuOpen(false)}
+                className={`block py-2 px-4 rounded-lg font-semibold transition-colors ${
+                  pathname === '/about' ? 'bg-rose-50 text-rose-600' : 'text-gray-700 hover:bg-gray-50'
+                }`}
+              >
+                About
+              </Link>
             </div>
           </div>
         )}
