@@ -66,7 +66,7 @@ export default function ProductCard({ product }: Props) {
 
   return (
     <>
-      <div className="bg-white rounded-xl sm:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-3 sm:p-4 md:p-5 flex flex-col justify-between h-full">
+      <div className="bg-white rounded-xl sm:rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-3 sm:p-4 md:p-5 flex flex-col justify-between h-full">
 
         {/* IMAGE SECTION */}
         <div className="relative mb-4 sm:mb-5 md:mb-6 flex justify-center">
@@ -145,7 +145,7 @@ export default function ProductCard({ product }: Props) {
             rel="noopener noreferrer"
             className="mt-2 sm:mt-3"
           >
-            <button className="w-full bg-rose-500 hover:bg-rose-600 text-white text-[10px] sm:text-sm md:text-base font-semibold py-2 sm:py-2.5 md:py-3 px-2.5 sm:px-4 md:px-5 rounded-lg sm:rounded-xl flex items-center justify-center gap-1 transition">
+            <button className="w-full bg-rose-500 hover:bg-rose-600 active:scale-[0.98] text-white text-[10px] sm:text-sm md:text-base font-semibold py-2 sm:py-2.5 md:py-3 px-2.5 sm:px-4 md:px-5 rounded-lg sm:rounded-xl flex items-center justify-center gap-1 transition">
               <span className="whitespace-nowrap">Order now on amazon</span>
               <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
             </button>

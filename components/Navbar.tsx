@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { useState, useRef, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 
 // Face care sub-pages
@@ -53,18 +54,25 @@ export default function Navbar() {
   return (
     <>
       {/* Main Navbar */}
-      <nav className="bg-white shadow-sm sticky top-0 z-50">
+      <motion.nav
+        className="bg-white shadow-sm sticky top-0 z-50"
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center gap-1.5 sm:gap-2 group">
               <div className="p-0.5 sm:p-1 rounded-lg group-hover:scale-110 transition-transform">
-                <Image 
-                  src="/logo.png" 
-                  alt="The Glow Psychology Logo" 
-                  width={48}
-                  height={48}
-                  className="w-12 h-12 sm:w-10 sm:h-10 md:w-12 md:h-12 object-cover rounded-full"
-                />
+                <motion.div whileHover={{ scale: 1.05 }} transition={{ type: 'spring', stiffness: 400, damping: 25 }}>
+                  <Image 
+                    src="/logo.png" 
+                    alt="The Glow Psychology Logo" 
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 sm:w-10 sm:h-10 md:w-12 md:h-12 object-cover rounded-full"
+                  />
+                </motion.div>
               </div>
               <span className="text-base sm:text-lg md:text-xl font-bold bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent">
                 GlowFinds India
@@ -103,8 +111,15 @@ export default function Navbar() {
                   )}
                 </button>
 
+                <AnimatePresence>
                 {faceCareOpen && (
-                  <div className="absolute top-full left-0 mt-4 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50">
+                  <motion.div
+                    className="absolute top-full left-0 mt-4 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50"
+                    initial={{ opacity: 0, y: -8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -8 }}
+                    transition={{ duration: 0.2 }}
+                  >
                     <Link
                       href="/face-care"
                       onClick={() => setFaceCareOpen(false)}
@@ -126,8 +141,9 @@ export default function Navbar() {
                         {link.label}
                       </Link>
                     ))}
-                  </div>
+                  </motion.div>
                 )}
+                </AnimatePresence>
               </div>
 
               {/* Hair Care Dropdown */}
@@ -144,13 +160,21 @@ export default function Navbar() {
                   <ChevronDown className={`w-4 h-4 transition-transform ${hairCareOpen ? 'rotate-180' : ''}`} />
                 </button>
 
+                <AnimatePresence>
                 {hairCareOpen && (
-                  <div className="absolute top-full left-0 mt-4 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50">
+                  <motion.div
+                    className="absolute top-full left-0 mt-4 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50"
+                    initial={{ opacity: 0, y: -8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -8 }}
+                    transition={{ duration: 0.2 }}
+                  >
                     <div className="px-4 py-3 text-sm text-gray-500 text-center">
                       Coming Soon! 🚀
                     </div>
-                  </div>
+                  </motion.div>
                 )}
+                </AnimatePresence>
               </div>
 
               {/* Skincare Guides (Blog) */}
@@ -195,8 +219,15 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu */}
+        <AnimatePresence>
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-100 bg-white">
+          <motion.div
+            className="md:hidden border-t border-gray-100 bg-white"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+          >
             <div className="px-4 py-4 space-y-2">
               <Link
                 href="/"
@@ -266,13 +297,21 @@ export default function Navbar() {
                 About
               </Link>
             </div>
-          </div>
+          </motion.div>
         )}
-      </nav>
+        </AnimatePresence>
+      </motion.nav>
 
       {/* Secondary Navigation for Face Care Pages */}
+      <AnimatePresence>
       {isFaceCarePage && (
-        <div className="bg-gray-50 border-b border-gray-200">
+        <motion.div
+          className="bg-gray-50 border-b border-gray-200"
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: 'auto' }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.25 }}
+        >
           <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
             {/* Mobile: Grid layout showing all at once */}
             <div className="grid grid-cols-3 gap-1.5 py-2 sm:hidden">
@@ -328,8 +367,9 @@ export default function Navbar() {
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
+      </AnimatePresence>
     </>
   )
 }

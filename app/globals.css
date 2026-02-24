@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Modern base: smooth scroll & reduced motion */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Subtle gradient mesh background utility */
+@layer utilities {
+  .bg-mesh {
+    background-image:
+      radial-gradient(at 40% 20%, rgba(251, 113, 133, 0.08) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, rgba(244, 114, 182, 0.06) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, rgba(251, 207, 232, 0.06) 0px, transparent 50%);
+  }
+}
+
 /* Blog Content Styles */
 .blog-content h1 {
   @apply text-3xl font-bold text-gray-900 mt-8 mb-4;
