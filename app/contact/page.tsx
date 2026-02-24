@@ -57,7 +57,7 @@ export default function ContactPage() {
           </p>
           <div className="space-y-3">
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:theglowpsychology@gmail.com"
               className="flex items-center gap-3 text-rose-600 hover:text-rose-700 font-medium"
             >
               <Mail className="w-5 h-5" />

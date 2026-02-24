@@ -370,6 +370,27 @@ export const vitaminCSerums: Product[] = [
     skinType: "All Skin Types",
     concentration: "2%"
   },
+  
+  {
+    name: "10% Niacinamide Serum - Fades Acne Marks, Controls Oil & Reduces Dark Spots",
+    brand: "The Derma Co",
+    rating: "4.1 (14,565)",
+    price: "₹337",
+    mrp: "₹449",
+    discountPercentage: 25,
+    images: [
+      "/serums/DermaCo1/image.png",
+      "/serums/DermaCo1/image copy.png",
+      "/serums/DermaCo1/image copy 2.png",
+      "/serums/DermaCo1/image copy 3.png",
+      "/serums/DermaCo1/image copy 4.png"
+    ],
+    link: "https://amzn.to/4s8KW3C",
+    features: ["10% Niacinamide", "2% Zinc", "Oil Control", "Reduces Dark Spots"],
+    bestFor: "Acne & Oil Control",
+    skinType: "Oily & Acne-Prone Skin",
+    concentration: "10%"
+  },
   {
     name: "Minimalist 10% Niacinamide Face Serum with Zinc | Oil Control & Pore Care | 30ml",
     brand: "Minimalist",
