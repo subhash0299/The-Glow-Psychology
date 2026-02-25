@@ -1440,6 +1440,290 @@ When chosen correctly, sunscreen won't make your skin oily — it will protect i
   
   **Pro Tip:** Dry skin doesn’t need more products — it needs the right ones.
     `
+  },
+  {
+    slug: 'skincare-routine-combination-skin-india',
+    title: 'Best Skincare Routine for Combination Skin in India (2026 Expert Guide)',
+    description: 'Best skincare routine for combination skin in India (2026). Step-by-step morning and night routine for oily T-zone and dry cheeks. Dermatologist-approved routine for Indian weather.',
+    category: 'Skincare Guide',
+    date: '2026-02-26',
+    readTime: 9,
+    relatedProducts: [
+      '/best-face-cleanser-india',
+      '/best-niacinamide-serum-india',
+      '/best-face-moisturizer-india',
+      '/best-sunscreen-india'
+    ],
+    relatedPosts: [
+      'best-skincare-routine-oily-skin-india',
+      'how-to-fix-damaged-skin-barrier',
+      'beginner-skincare-routine-under-1000',
+      'niacinamide-benefits-acne-prone-skin-india'
+    ],
+    faqs: [
+      {
+        question: 'What is combination skin?',
+        answer: 'Combination skin means some areas of the face are oily (usually T-zone) while others remain dry or normal, requiring balanced skincare.'
+      },
+      {
+        question: 'Which moisturizer is best for combination skin?',
+        answer: 'Use lightweight gel-cream moisturizers containing ceramides or niacinamide that hydrate dry areas without making oily zones greasy.'
+      },
+      {
+        question: 'Can combination skin use niacinamide?',
+        answer: 'Yes. Niacinamide is one of the best ingredients for combination skin as it controls oil while strengthening the skin barrier.'
+      },
+      {
+        question: 'Should combination skin use sunscreen daily?',
+        answer: 'Yes. Choose lightweight, non-greasy SPF 50 sunscreen suitable for humid Indian weather.'
+      }
+    ],
+    content: `
+  
+  # Best Skincare Routine for Combination Skin in India (2026 Expert Guide)
+  
+  If your **forehead and nose become oily but cheeks feel dry or normal**, you likely have **combination skin** — the most common skin type in India.
+  
+  Indian climate makes combination skin harder to manage because of:
+  
+  - Humidity
+  - Pollution
+  - Sweat
+  - Hard water
+  - Overuse of active ingredients
+  
+  The goal is simple:
+  
+  ✅ Control oil  
+  ✅ Hydrate dry areas  
+  ✅ Protect skin barrier  
+  ✅ Prevent acne without dryness  
+  
+  This guide gives you a **balanced skincare routine designed specifically for Indian weather**.
+  
+  ---
+  
+  ## Why Combination Skin Needs a Different Routine
+  
+  Combination skin fails when people treat it fully oily *or* fully dry.
+  
+  Common mistakes include:
+  - Using strong oil-control face wash
+  - Skipping moisturizer
+  - Overusing salicylic acid
+  - Matte sunscreen daily
+  
+  This leads to **damaged skin barrier**, breakouts, and dehydration.
+  
+  👉 Read: [How to Fix Damaged Skin Barrier](/blog/how-to-fix-damaged-skin-barrier)
+  
+  ---
+  
+  # 🌞 Morning Skincare Routine for Combination Skin
+  
+  ## Step 1: Gentle Balanced Cleanser
+  
+  Avoid extremely foaming cleansers.
+  
+  Look for:
+  - Mild gel cleanser
+  - pH-balanced formula
+  - Non-stripping ingredients
+  
+  👉 See guide: [Best Face Wash in India](/best-face-cleanser-india)
+  
+  Your cleanser should remove oil **without tightening cheeks**.
+  
+  ---
+  
+  ## Step 2: Oil-Balancing Serum (Niacinamide)
+  
+  Niacinamide is the BEST ingredient for combination skin.
+  
+  Benefits:
+  - Controls T-zone oil
+  - Minimizes pores
+  - Reduces acne
+  - Strengthens barrier
+  
+  👉 Learn more: [Niacinamide Benefits for Acne-Prone Skin](/blog/niacinamide-benefits-acne-prone-skin-india)
+  
+  Use 5–10% concentration daily.
+  
+  ---
+  
+  ## Step 3: Lightweight Moisturizer (Essential)
+  
+  Combination skin still needs hydration.
+  
+  Choose:
+  ✔ Gel-cream texture  
+  ✔ Ceramides  
+  ✔ Panthenol  
+  ✔ Non-comedogenic formula  
+  
+  👉 Explore: [Best Moisturizer in India](/best-face-moisturizer-india)
+  
+  Apply evenly — not just on dry areas.
+  
+  ---
+  
+  ## Step 4: Sunscreen (Most Important Step)
+  
+  Indian heat increases oil production.
+  
+  Choose sunscreen with:
+  - SPF 50 PA++++
+  - Matte or natural finish
+  - Sweat resistance
+  - No white cast
+  
+  👉 See: [Best Sunscreen for Oily Skin in India](/blog/best-sunscreen-oily-skin-india)
+  
+  Daily sunscreen prevents pigmentation and uneven texture.
+  
+  ---
+  
+  # 🌙 Night Skincare Routine for Combination Skin
+  
+  ## Step 1: Gentle Cleanse
+  
+  Remove sunscreen properly at night.
+  
+  If needed:
+  - Micellar water or cleansing balm
+  - Follow with mild cleanser
+  
+  Avoid aggressive double cleansing daily.
+  
+  ---
+  
+  ## Step 2: Targeted Treatment (Optional)
+  
+  Depending on concern:
+  
+  **For acne/oily T-zone**
+  - Niacinamide
+  - Mild salicylic acid (2–3x weekly)
+  
+  **For dryness**
+  - Barrier repair creams
+  
+  👉 Beginner-friendly routine:
+  [Best Beginner Skincare Routine Under ₹1000](/blog/beginner-skincare-routine-under-1000)
+  
+  ---
+  
+  ## Step 3: Barrier Repair Moisturizer
+  
+  Nighttime is repair time.
+  
+  Look for:
+  - Ceramides
+  - Fatty acids
+  - Peptides
+  
+  Healthy barrier = balanced oil production.
+  
+  ---
+  
+  # Weekly Routine for Combination Skin
+  
+  ✔ Exfoliate 1–2 times weekly  
+  ✔ Clay mask only on T-zone  
+  ✔ Hydrating mask on cheeks  
+  ✔ Avoid daily exfoliation  
+  
+  Balance is key — not aggression.
+  
+  ---
+  
+  # Common Combination Skin Mistakes
+  
+  ❌ Using oily-skin products everywhere  
+  ❌ Skipping moisturizer  
+  ❌ Overusing actives  
+  ❌ Alcohol-heavy toners  
+  ❌ Matte sunscreen daily  
+  
+  Many people unknowingly convert combination skin into **damaged skin**.
+  
+  ---
+  
+  # Budget Routine Under ₹1000
+  
+  Affordable routine example:
+  
+  - Cleanser: ₹250–300  
+  - Niacinamide Serum: ₹400–500  
+  - Moisturizer: ₹300–400  
+  - Sunscreen: ₹400–500  
+  
+  Good skincare ≠ expensive skincare.
+  
+  ---
+  
+  # How to Identify Combination Skin
+  
+  You likely have combination skin if:
+  
+  ✅ Oily forehead & nose  
+  ✅ Normal or dry cheeks  
+  ✅ Occasional acne  
+  ✅ Makeup melts in T-zone only  
+  
+  If your entire face feels oily, read:
+  👉 [Best Skincare Routine for Oily Skin in India](/blog/best-skincare-routine-oily-skin-india)
+  
+  ---
+  
+  # FAQs – Combination Skin Routine
+  
+  ### Q1: What skincare routine is best for combination skin?
+  Gentle cleanser, niacinamide serum, lightweight moisturizer, and SPF 50 sunscreen.
+  
+  ---
+  
+  ### Q2: Can combination skin skip moisturizer?
+  No. Skipping moisturizer increases oil production.
+  
+  ---
+  
+  ### Q3: Is niacinamide good daily?
+  Yes. It balances both oily and dry areas safely.
+  
+  ---
+  
+  ### Q4: How often should combination skin exfoliate?
+  1–2 times per week maximum.
+  
+  ---
+  
+  # Final Verdict
+  
+  The best skincare routine for combination skin in India focuses on:
+  
+  ✔ Oil balance  
+  ✔ Lightweight hydration  
+  ✔ Barrier protection  
+  ✔ Smart ingredient use  
+  ✔ Daily sunscreen  
+  
+  Consistency for 4–6 weeks can visibly improve texture and oil control.
+  
+  ---
+  
+  # Related Guides
+  
+  - [Best Skincare Routine for Oily Skin in India](/blog/best-skincare-routine-oily-skin-india)
+  - [Niacinamide Benefits for Acne-Prone Skin](/blog/niacinamide-benefits-acne-prone-skin-india)
+  - [How to Fix Damaged Skin Barrier](/blog/how-to-fix-damaged-skin-barrier)
+  - [Best Sunscreen in India](/best-sunscreen-india)
+  
+  ---
+  
+  **Pro Tip:** Combination skin doesn’t need two routines — it needs balance.
+  `
   }
 ];
 
