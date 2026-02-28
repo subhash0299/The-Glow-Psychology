@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 
@@ -43,15 +44,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    <>
+    <Script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3435745172294207"
+      crossOrigin="anonymous"
+      strategy="afterInteractive"
+    />
     <html lang="en">
       <head>
         <meta name="p:domain_verify" content="11bb36e1da088d0f6458abf06154be7d"/>
         <meta name="google-site-verification" content="VIVuAD4uv5CJv554NfIs9hAktdqx86lwHXhPoqweF7M" />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3435745172294207"
-          crossOrigin="anonymous"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -78,6 +81,7 @@ export default function RootLayout({
         </footer>
       </body>
     </html>
+    </>
   )
 }
 

@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Calendar, Clock, ArrowRight, BookOpen } from 'lucide-react'
 import { motion } from 'framer-motion'
 import type { BlogPost } from '@/data/blogPosts'
@@ -77,39 +78,51 @@ export default function BlogPageClient({ posts }: { posts: BlogPost[] }) {
                 href={`/blog/${post.slug}`}
                 className="group block bg-white rounded-xl sm:rounded-2xl shadow-md overflow-hidden flex flex-col h-full"
               >
+                {/* Hero image on card - Simple style */}
+                <div className="relative w-full aspect-[16/10] bg-gray-100 shrink-0">
+                  {post.featuredImage ? (
+                    <Image
+                      src={post.featuredImage}
+                      alt=""
+                      fill
+                      className="object-cover group-hover:scale-[1.02] transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 bg-gradient-to-br from-rose-100 to-pink-100 flex items-center justify-center">
+                      <BookOpen className="w-12 h-12 text-rose-300" />
+                    </div>
+                  )}
+                </div>
                 <motion.div
-                  className="flex flex-col flex-grow p-4 sm:px-6 pt-4 sm:pt-6"
-                  whileHover={{ y: -4 }}
+                  className="flex flex-col flex-grow p-4 sm:px-6 pt-4 sm:pt-5 pb-5 sm:pb-6"
+                  whileHover={{ y: -2 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 25 }}
                 >
-                  <div className="px-0 sm:px-2">
-                    <span
-                      className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(post.category)}`}
-                    >
-                      {post.category}
-                    </span>
+                  <span
+                    className={`inline-block px-3 py-1 rounded-full text-xs font-semibold w-fit ${getCategoryColor(post.category)}`}
+                  >
+                    {post.category}
+                  </span>
+                  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-3 mb-2 group-hover:text-rose-600 transition-colors line-clamp-2">
+                    {post.title}
+                  </h2>
+                  <p className="text-sm sm:text-base text-gray-600 mb-4 line-clamp-3 flex-grow">
+                    {post.description}
+                  </p>
+                  <div className="flex items-center gap-4 text-xs sm:text-sm text-gray-500 mb-4">
+                    <div className="flex items-center gap-1.5">
+                      <Calendar className="w-4 h-4" />
+                      <span>{formatDate(post.date)}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <Clock className="w-4 h-4" />
+                      <span>{post.readTime} min read</span>
+                    </div>
                   </div>
-                  <div className="px-0 sm:px-2 py-4 sm:py-6 flex-grow flex flex-col">
-                    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 group-hover:text-rose-600 transition-colors line-clamp-2">
-                      {post.title}
-                    </h2>
-                    <p className="text-sm sm:text-base text-gray-600 mb-4 line-clamp-3 flex-grow">
-                      {post.description}
-                    </p>
-                    <div className="flex items-center gap-4 text-xs sm:text-sm text-gray-500 mb-4">
-                      <div className="flex items-center gap-1.5">
-                        <Calendar className="w-4 h-4" />
-                        <span>{formatDate(post.date)}</span>
-                      </div>
-                      <div className="flex items-center gap-1.5">
-                        <Clock className="w-4 h-4" />
-                        <span>{post.readTime} min read</span>
-                      </div>
-                    </div>
-                    <div className="flex items-center text-rose-600 font-semibold text-sm sm:text-base group-hover:gap-2 transition-all">
-                      <span>Read More</span>
-                      <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
-                    </div>
+                  <div className="flex items-center text-rose-600 font-semibold text-sm sm:text-base group-hover:gap-2 transition-all">
+                    <span>Read More</span>
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </motion.div>
               </Link>
