@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Calendar, Clock, ArrowLeft, BookOpen, BadgeCheck, Share2, Facebook, Twitter } from 'lucide-react'
 import PrintButton from '@/components/PrintButton'
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown, { type Components } from 'react-markdown'
 import { blogPosts } from '@/data/blogPosts'
 import { getProductForCategoryPath } from '@/lib/blogProducts'
 import type { Product } from '@/data/products'
@@ -162,26 +162,25 @@ function BlogContentRenderer({
   // Split on [PRODUCT:/some/path] markers
   const parts = prepared.split(/\[PRODUCT:([^\]]+)\]/g)
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const mdComponents: any = {
-    h1: ({ children }: { children?: React.ReactNode }) => <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">{children}</h2>,
-    h2: ({ children }: { children?: React.ReactNode }) => <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">{children}</h2>,
-    h3: ({ children }: { children?: React.ReactNode }) => <h3 className="text-xl font-bold text-gray-900 mt-8 mb-3">{children}</h3>,
-    p: ({ children }: { children?: React.ReactNode }) => <p className="mb-4 text-gray-700 leading-relaxed">{children}</p>,
-    ul: ({ children }: { children?: React.ReactNode }) => <ul className="list-disc list-inside mb-4 space-y-2 ml-4">{children}</ul>,
-    ol: ({ children }: { children?: React.ReactNode }) => <ol className="list-decimal list-inside mb-4 space-y-2 ml-4">{children}</ol>,
-    li: ({ children }: { children?: React.ReactNode }) => <li className="mb-2">{children}</li>,
-    strong: ({ children }: { children?: React.ReactNode }) => <strong className="font-semibold text-gray-900">{children}</strong>,
-    em: ({ children }: { children?: React.ReactNode }) => <em className="italic">{children}</em>,
-    a: ({ href, children }: { href?: string; children?: React.ReactNode }) => (
+  const mdComponents: Components = {
+    h1: ({ children }) => <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">{children}</h2>,
+    h2: ({ children }) => <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">{children}</h2>,
+    h3: ({ children }) => <h3 className="text-xl font-bold text-gray-900 mt-8 mb-3">{children}</h3>,
+    p: ({ children }) => <p className="mb-4 text-gray-700 leading-relaxed">{children}</p>,
+    ul: ({ children }) => <ul className="list-disc list-inside mb-4 space-y-2 ml-4">{children}</ul>,
+    ol: ({ children }) => <ol className="list-decimal list-inside mb-4 space-y-2 ml-4">{children}</ol>,
+    li: ({ children }) => <li className="mb-2">{children}</li>,
+    strong: ({ children }) => <strong className="font-semibold text-gray-900">{children}</strong>,
+    em: ({ children }) => <em className="italic">{children}</em>,
+    a: ({ href, children }) => (
       <a href={href} className="text-rose-600 hover:text-rose-700 underline">
         {children}
       </a>
     ),
-    code: ({ children }: { children?: React.ReactNode }) => (
+    code: ({ children }) => (
       <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">{children}</code>
     ),
-    blockquote: ({ children }: { children?: React.ReactNode }) => (
+    blockquote: ({ children }) => (
       <blockquote className="border-l-4 border-rose-500 pl-4 italic my-4 text-gray-600">
         {children}
       </blockquote>
