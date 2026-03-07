@@ -188,18 +188,20 @@ function BlogContentRenderer({
   }
 
   return (
-    <div className="blog-content text-gray-700 leading-relaxed">
+    <div className="text-gray-700 leading-relaxed">
       {parts.map((part, i) => {
         if (i % 2 === 0) {
-          // Markdown segment
+          // Markdown segment — scoped with blog-content for link/heading styles
           if (!part.trim()) return null
           return (
-            <ReactMarkdown key={i} components={mdComponents}>
-              {part}
-            </ReactMarkdown>
+            <div key={i} className="blog-content">
+              <ReactMarkdown components={mdComponents}>
+                {part}
+              </ReactMarkdown>
+            </div>
           )
         } else {
-          // Product path
+          // Product card — outside blog-content so CSS link overrides don't apply
           const product = getProductForCategoryPath(part.trim())
           if (!product) return null
           return <BlogProductCard key={i} product={product} />
@@ -445,6 +447,14 @@ export default function BlogPost({ params }: Props) {
               </div>
             </div>
           )}
+
+          {/* Disclaimer */}
+          <div className="mt-12 bg-amber-50 border border-amber-200 rounded-2xl p-5 sm:p-6">
+            <p className="text-sm font-semibold text-amber-800 mb-1">Disclaimer</p>
+            <p className="text-sm text-amber-700 leading-relaxed">
+              The content on GlowFinds is for informational purposes only and does not constitute medical advice. Always consult a qualified dermatologist before starting a new skincare routine. Results may vary. This post may contain affiliate links — we may earn a commission at no extra cost to you.
+            </p>
+          </div>
 
           {/* CTA */}
           <div className="mt-12 bg-gradient-to-br from-rose-500 to-pink-500 rounded-2xl p-6 sm:p-8 text-white text-center">

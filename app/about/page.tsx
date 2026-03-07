@@ -8,6 +8,7 @@ import {
   Shield,
   Leaf,
   CheckCircle2,
+  AlertTriangle,
 } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -226,6 +227,36 @@ export default function AboutPage() {
               Honest, non-exaggerated recommendations
             </li>
           </ul>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="flex items-center gap-2 text-2xl font-bold text-gray-900 mb-4">
+            <AlertTriangle className="w-6 h-6 text-rose-600" />
+            Medical &amp; Content Disclaimer
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            The content published on GlowFinds is for <strong>informational and educational purposes only</strong>. We are not dermatologists, doctors, or licensed medical professionals. Nothing on this Site should be construed as medical advice, diagnosis, or treatment.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            We strongly recommend consulting a qualified dermatologist before starting any new skincare routine or product, particularly if you have a skin condition such as eczema, rosacea, or severe acne.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Individual results vary. Product effectiveness depends on skin type, lifestyle, and consistency of use.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="flex items-center gap-2 text-2xl font-bold text-gray-900 mb-4">
+            <Shield className="w-6 h-6 text-rose-600" />
+            Advertising Disclosure
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            GlowFinds displays advertisements served by <strong>Google AdSense</strong>. These ads are provided by Google and may be personalised based on your browsing history. We earn revenue from these ads, which helps us keep the Site free and independent.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Ad content is controlled by Google and does not represent endorsements by GlowFinds. For details on how Google uses data to serve ads, see our{' '}
+            <a href="/privacy-policy" className="text-rose-600 hover:text-rose-700 underline font-medium">Privacy Policy</a>.
+          </p>
         </section>
 
         <nav className="pt-6 border-t border-gray-200">
