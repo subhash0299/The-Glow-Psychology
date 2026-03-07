@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { Droplets } from 'lucide-react'
+import Link from 'next/link'
+import { Droplets, BookOpen } from 'lucide-react'
 import SkinTypeFilter from '@/components/SkinTypeFilter'
 import { faceOils } from '@/data/products'
 
@@ -49,6 +50,39 @@ export default function FaceOil() {
           title="Top Face Oil Picks for Indian Skin"
           description="These face oils are specially curated for Indian skin types, offering lightweight formulas with squalane, rosehip, and other nourishing ingredients."
         />
+
+        <div className="bg-amber-50 border border-amber-100 rounded-2xl p-6 sm:p-8 mb-8 sm:mb-12">
+          <div className="flex items-center gap-3 mb-4">
+            <BookOpen className="w-6 h-6 text-amber-600" />
+            <h2 className="text-lg sm:text-xl font-bold text-gray-900">Related Skincare Guides</h2>
+          </div>
+          <p className="text-gray-600 text-sm mb-5">
+            Find out where face oil fits into your daily routine with these step-by-step guides.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Link
+              href="/blog/skincare-routine-dry-skin-india"
+              className="flex-1 bg-white border border-amber-200 rounded-xl p-4 hover:border-amber-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">Skincare Routine for Dry Skin in India</p>
+              <p className="text-amber-700 text-xs font-medium">Read Guide →</p>
+            </Link>
+            <Link
+              href="/blog/night-skincare-routine-for-clear-skin"
+              className="flex-1 bg-white border border-amber-200 rounded-xl p-4 hover:border-amber-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">Night Skincare Routine for Clear Skin</p>
+              <p className="text-amber-700 text-xs font-medium">Read Guide →</p>
+            </Link>
+            <Link
+              href="/blog/how-to-fix-damaged-skin-barrier"
+              className="flex-1 bg-white border border-amber-200 rounded-xl p-4 hover:border-amber-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">How to Fix a Damaged Skin Barrier</p>
+              <p className="text-amber-700 text-xs font-medium">Read Guide →</p>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )

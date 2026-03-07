@@ -1620,9 +1620,9 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
     readTime: 9,
     relatedProducts: [
       '/best-face-cleanser-india',
-      '/best-niacinamide-serum-india',
+      '/best-vitamin-c-serum-india',
       '/best-face-moisturizer-india',
-      '/best-retinol-serum-india'
+      '/best-vitamin-c-serum-india'
     ],
     relatedPosts: [
       'beginner-skincare-routine-step-by-step',
@@ -1720,7 +1720,7 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
   - Improving uneven skin tone  
   - Strengthening the skin barrier
   
-  [PRODUCT:/best-niacinamide-serum-india]
+  [PRODUCT:/best-vitamin-c-serum-india]
   
   ---
   
@@ -1730,7 +1730,7 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
   
   However, beginners should start slowly and use retinol only a few nights per week.
   
-  [PRODUCT:/best-retinol-serum-india]
+  [PRODUCT:/best-vitamin-c-serum-india]
   
   ---
   
@@ -1813,10 +1813,10 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
     date: '2026-03-07',
     readTime: 9,
     relatedProducts: [
-      '/best-face-cleanser-sensitive-skin',
-      '/best-niacinamide-serum-india',
+      '/best-face-cleanser-india',
+      '/best-vitamin-c-serum-india',
       '/best-face-moisturizer-india',
-      '/best-sunscreen-sensitive-skin'
+      '/best-sunscreen-india'
     ],
     relatedPosts: [
       'beginner-skincare-routine-step-by-step',
@@ -1894,7 +1894,7 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
   
   These formulas cleanse the skin without causing irritation.
   
-  [PRODUCT:/best-face-cleanser-sensitive-skin]
+  [PRODUCT:/best-face-cleanser-india]
   
   ---
   
@@ -1911,7 +1911,7 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
   
   Apply a few drops after cleansing.
   
-  [PRODUCT:/best-niacinamide-serum-india]
+  [PRODUCT:/best-vitamin-c-serum-india]
   
   ---
   
@@ -1944,7 +1944,7 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
   - Fragrance-free formula  
   - Non-comedogenic ingredients  
   
-  [PRODUCT:/best-sunscreen-sensitive-skin]
+  [PRODUCT:/best-sunscreen-india]
   
   ---
   
@@ -1958,7 +1958,7 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
   
   Avoid scrubbing your skin too aggressively, as friction can irritate sensitive skin.
   
-  [PRODUCT:/best-face-cleanser-sensitive-skin]
+  [PRODUCT:/best-face-cleanser-india]
   
   ---
   
@@ -2039,7 +2039,7 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
     readTime: 10,
     relatedProducts: [
       '/best-face-cleanser-india',
-      '/best-toner-india',
+      '/best-face-toner-india',
       '/best-vitamin-c-serum-india',
       '/best-sunscreen-india'
     ],
@@ -2144,7 +2144,7 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
   - Prepares skin for serums  
   - Provides lightweight hydration  
   
-  [PRODUCT:/best-toner-india]
+  [PRODUCT:/best-face-toner-india]
   
   ---
   
@@ -2463,8 +2463,8 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
     date: '2026-03-07',
     readTime: 8,
     relatedProducts: [
-      '/best-face-cleanser-men',
-      '/best-niacinamide-serum-india',
+      '/best-face-cleanser-india',
+      '/best-vitamin-c-serum-india',
       '/best-face-moisturizer-india',
       '/best-sunscreen-india'
     ],
@@ -2530,7 +2530,7 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
   
   Avoid using regular soap on your face because it can dry out the skin and disrupt the skin barrier.
   
-  [PRODUCT:/best-face-cleanser-men]
+  [PRODUCT:/best-face-cleanser-india]
   
   ---
   
@@ -2547,7 +2547,7 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
   
   Apply a few drops after cleansing.
   
-  [PRODUCT:/best-niacinamide-serum-india]
+  [PRODUCT:/best-vitamin-c-serum-india]
   
   ---
   
@@ -2591,7 +2591,7 @@ Combination skin doesn't need two separate routines — it needs balance. A gent
   
   Wash your face before going to bed to remove dirt, sweat, and pollution accumulated throughout the day.
   
-  [PRODUCT:/best-face-cleanser-men]
+  [PRODUCT:/best-face-cleanser-india]
   
   ---
   

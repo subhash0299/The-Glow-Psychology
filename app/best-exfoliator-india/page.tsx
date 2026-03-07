@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { Sparkles } from 'lucide-react'
+import Link from 'next/link'
+import { Sparkles, BookOpen } from 'lucide-react'
 import SkinTypeFilter from '@/components/SkinTypeFilter'
 import { exfoliators } from '@/data/products'
 
@@ -49,6 +50,39 @@ export default function Exfoliator() {
           title="Top Exfoliator Picks for Indian Skin"
           description="These exfoliators are specially curated for Indian skin types, offering chemical peels and gentle scrubs to reveal smooth, glowing skin."
         />
+
+        <div className="bg-purple-50 border border-purple-100 rounded-2xl p-6 sm:p-8 mb-8 sm:mb-12">
+          <div className="flex items-center gap-3 mb-4">
+            <BookOpen className="w-6 h-6 text-purple-500" />
+            <h2 className="text-lg sm:text-xl font-bold text-gray-900">Related Skincare Guides</h2>
+          </div>
+          <p className="text-gray-600 text-sm mb-5">
+            Not sure how often to exfoliate? These routine guides will show you exactly where and how often exfoliation fits in.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Link
+              href="/blog/how-to-fix-damaged-skin-barrier"
+              className="flex-1 bg-white border border-purple-200 rounded-xl p-4 hover:border-purple-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">How to Fix a Damaged Skin Barrier</p>
+              <p className="text-purple-600 text-xs font-medium">Read Guide →</p>
+            </Link>
+            <Link
+              href="/blog/skincare-routine-oily-skin-india"
+              className="flex-1 bg-white border border-purple-200 rounded-xl p-4 hover:border-purple-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">Skincare Routine for Oily Skin in India</p>
+              <p className="text-purple-600 text-xs font-medium">Read Guide →</p>
+            </Link>
+            <Link
+              href="/blog/minimalist-skincare-routine-for-busy-people"
+              className="flex-1 bg-white border border-purple-200 rounded-xl p-4 hover:border-purple-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">Minimalist Skincare Routine for Busy People</p>
+              <p className="text-purple-600 text-xs font-medium">Read Guide →</p>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )

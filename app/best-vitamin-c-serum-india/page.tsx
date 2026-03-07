@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { Sparkles, Star, Zap } from 'lucide-react'
+import Link from 'next/link'
+import { Sparkles, Star, Zap, BookOpen } from 'lucide-react'
 import SkinTypeFilter from '@/components/SkinTypeFilter'
 import { vitaminCSerums } from '@/data/products'
 
@@ -95,6 +96,39 @@ export default function VitaminCSerum() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="bg-rose-50 border border-rose-100 rounded-2xl p-6 sm:p-8 mb-8 sm:mb-12">
+          <div className="flex items-center gap-3 mb-4">
+            <BookOpen className="w-6 h-6 text-rose-500" />
+            <h2 className="text-lg sm:text-xl font-bold text-gray-900">Related Skincare Guides</h2>
+          </div>
+          <p className="text-gray-600 text-sm mb-5">
+            Not sure how to use a face serum? These guides will help you build the perfect routine around it.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Link
+              href="/blog/morning-skincare-routine-for-glowing-skin"
+              className="flex-1 bg-white border border-rose-200 rounded-xl p-4 hover:border-rose-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">Morning Skincare Routine for Glowing Skin</p>
+              <p className="text-rose-600 text-xs font-medium">Read Guide →</p>
+            </Link>
+            <Link
+              href="/blog/beginner-skincare-routine-under-1000"
+              className="flex-1 bg-white border border-rose-200 rounded-xl p-4 hover:border-rose-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">Beginner Skincare Routine Under ₹1000</p>
+              <p className="text-rose-600 text-xs font-medium">Read Guide →</p>
+            </Link>
+            <Link
+              href="/blog/niacinamide-benefits-acne"
+              className="flex-1 bg-white border border-rose-200 rounded-xl p-4 hover:border-rose-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">Niacinamide Benefits for Acne-Prone Skin</p>
+              <p className="text-rose-600 text-xs font-medium">Read Guide →</p>
+            </Link>
           </div>
         </div>
       </div>

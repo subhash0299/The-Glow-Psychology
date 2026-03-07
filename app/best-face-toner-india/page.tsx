@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { Droplets } from 'lucide-react'
+import Link from 'next/link'
+import { Droplets, BookOpen } from 'lucide-react'
 import SkinTypeFilter from '@/components/SkinTypeFilter'
 import { toners } from '@/data/products'
 
@@ -49,6 +50,39 @@ export default function Toner() {
           title="Top Toner Picks for Indian Skin"
           description="These toners are specially curated for Indian skin types, offering alcohol-free formulas, hydration, and pore control perfect for our tropical climate."
         />
+
+        <div className="bg-teal-50 border border-teal-100 rounded-2xl p-6 sm:p-8 mb-8 sm:mb-12">
+          <div className="flex items-center gap-3 mb-4">
+            <BookOpen className="w-6 h-6 text-teal-500" />
+            <h2 className="text-lg sm:text-xl font-bold text-gray-900">Related Skincare Guides</h2>
+          </div>
+          <p className="text-gray-600 text-sm mb-5">
+            Learn where toner fits in your routine and how to layer it correctly with these expert guides.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Link
+              href="/blog/korean-skincare-routine-10-steps"
+              className="flex-1 bg-white border border-teal-200 rounded-xl p-4 hover:border-teal-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">Korean 10-Step Skincare Routine</p>
+              <p className="text-teal-600 text-xs font-medium">Read Guide →</p>
+            </Link>
+            <Link
+              href="/blog/morning-skincare-routine-for-glowing-skin"
+              className="flex-1 bg-white border border-teal-200 rounded-xl p-4 hover:border-teal-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">Morning Skincare Routine for Glowing Skin</p>
+              <p className="text-teal-600 text-xs font-medium">Read Guide →</p>
+            </Link>
+            <Link
+              href="/blog/skincare-routine-oily-skin-india"
+              className="flex-1 bg-white border border-teal-200 rounded-xl p-4 hover:border-teal-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">Skincare Routine for Oily Skin in India</p>
+              <p className="text-teal-600 text-xs font-medium">Read Guide →</p>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )

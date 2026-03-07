@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { Eye } from 'lucide-react'
+import Link from 'next/link'
+import { Eye, BookOpen } from 'lucide-react'
 import CategoryFilter from '@/components/CategoryFilter'
 import { eyeCreams, lipBalms } from '@/data/products'
 
@@ -54,6 +55,39 @@ export default function EyeCream() {
           title="Top Eyes & Lip Care Picks for Indian Skin"
           description="These eye creams and lip balms are specially curated for Indian skin types, offering ingredients like caffeine, peptides, retinol, and nourishing oils to target dark circles, puffiness, and dry lips."
         />
+
+        <div className="bg-violet-50 border border-violet-100 rounded-2xl p-6 sm:p-8 mb-8 sm:mb-12">
+          <div className="flex items-center gap-3 mb-4">
+            <BookOpen className="w-6 h-6 text-violet-500" />
+            <h2 className="text-lg sm:text-xl font-bold text-gray-900">Related Skincare Guides</h2>
+          </div>
+          <p className="text-gray-600 text-sm mb-5">
+            Build a complete routine around your eye care and see the bigger skincare picture with these guides.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Link
+              href="/blog/night-skincare-routine-for-clear-skin"
+              className="flex-1 bg-white border border-violet-200 rounded-xl p-4 hover:border-violet-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">Night Skincare Routine for Clear Skin</p>
+              <p className="text-violet-600 text-xs font-medium">Read Guide →</p>
+            </Link>
+            <Link
+              href="/blog/morning-skincare-routine-for-glowing-skin"
+              className="flex-1 bg-white border border-violet-200 rounded-xl p-4 hover:border-violet-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">Morning Skincare Routine for Glowing Skin</p>
+              <p className="text-violet-600 text-xs font-medium">Read Guide →</p>
+            </Link>
+            <Link
+              href="/blog/beginner-skincare-routine-step-by-step"
+              className="flex-1 bg-white border border-violet-200 rounded-xl p-4 hover:border-violet-400 hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-gray-900 text-sm mb-1">Beginner Skincare Routine Step-by-Step</p>
+              <p className="text-violet-600 text-xs font-medium">Read Guide →</p>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )

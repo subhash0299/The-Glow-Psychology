@@ -216,7 +216,7 @@ export default function FaceCarePage() {
                 Start with the basics: cleanser, moisturizer, and sunscreen. Build your routine gradually.
               </p>
               <Link
-                href="/blog/skincare-routine-beginners-india"
+                href="/blog/beginner-skincare-routine-under-1000"
                 className="text-rose-600 font-medium text-sm hover:underline"
               >
                 Read Beginner Guide →
