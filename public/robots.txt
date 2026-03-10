@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://glowfinds.vercel.app/sitemap.xml
-
+Host: https://glowfinds.vercel.app

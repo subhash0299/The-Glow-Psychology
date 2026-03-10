@@ -23,10 +23,18 @@ const pathToProducts: Record<string, Product[]> = {
   '/best-lip-balm-india': lipBalms,
 }
 
-/** Get the first (featured) product for a category page path, for embedding in blog posts. */
-export function getProductForCategoryPath(path: string): Product | null {
+/**
+ * Get a product for embedding in blog posts.
+ * Supports two formats:
+ *   - "/best-face-moisturizer-india"      → first product (index 0)
+ *   - "/best-face-moisturizer-india:2"    → product at index 2
+ */
+export function getProductForCategoryPath(pathWithOptionalIndex: string): Product | null {
+  const [path, indexStr] = pathWithOptionalIndex.split(':')
   const products = pathToProducts[path]
-  return products && products.length > 0 ? products[0] : null
+  if (!products || products.length === 0) return null
+  const index = indexStr !== undefined ? parseInt(indexStr, 10) : 0
+  return products[index] ?? products[0]
 }
 
 /** Get category label from path for display (e.g. "Face Cleanser"). */
