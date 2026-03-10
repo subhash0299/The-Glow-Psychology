@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: 'GlowFinds - Best Budget Beauty Products in India | Affordable Skincare Under ₹999 (2026)',
   description: 'Discover affordable skincare picks for Indian skin. From sunscreens to serums, find the best beauty products under ₹999 with verified reviews and ratings.',
   keywords: 'best sunscreen india, vitamin c serum india, affordable skincare, budget beauty products, sunscreen under 500, vitamin c serum under 1000, best face wash india, skincare blog india',
+  icons: {
+    icon: [
+      { url: '/logo.png', type: 'image/png' },
+    ],
+    apple: '/logo.png',
+    shortcut: '/logo.png',
+  },
   openGraph: {
     title: 'GlowFinds - Best Budget Beauty Products in India | Affordable Skincare Under ₹999 (2026)',
     description: 'Discover affordable skincare picks for Indian skin. From sunscreens to serums, find the best beauty products under ₹999 with verified reviews and ratings.',
@@ -38,6 +45,13 @@ const organizationSchema = {
   logo: 'https://glowfinds.vercel.app/logo.png',
 }
 
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'GlowFinds',
+  url: 'https://glowfinds.vercel.app/',
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -55,9 +69,16 @@ export default function RootLayout({
       <head>
         <meta name="p:domain_verify" content="11bb36e1da088d0f6458abf06154be7d"/>
         <meta name="google-site-verification" content="VIVuAD4uv5CJv554NfIs9hAktdqx86lwHXhPoqweF7M" />
+        <link rel="icon" type="image/png" href="/logo.png" />
+        <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="shortcut icon" href="/logo.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body>
