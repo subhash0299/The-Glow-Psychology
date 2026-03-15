@@ -4,24 +4,26 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 
 export const metadata: Metadata = {
-  title: 'GlowFinds - Best Budget Beauty Products in India | Affordable Skincare Under ₹999 (2026)',
+  title: 'Best Budget Skincare Products in India (Under ₹999) – GlowFinds',
+  applicationName: 'GlowFinds',
   description: 'Discover affordable skincare picks for Indian skin. From sunscreens to serums, find the best beauty products under ₹999 with verified reviews and ratings.',
   keywords: 'best sunscreen india, vitamin c serum india, affordable skincare, budget beauty products, sunscreen under 500, vitamin c serum under 1000, best face wash india, skincare blog india',
   icons: {
     icon: [
-      { url: '/logo.png', type: 'image/png' },
+      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
-    apple: '/logo.png',
-    shortcut: '/logo.png',
+    apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'GlowFinds - Best Budget Beauty Products in India | Affordable Skincare Under ₹999 (2026)',
+    title: 'Best Budget Skincare Products in India (Under ₹999) – GlowFinds',
     description: 'Discover affordable skincare picks for Indian skin. From sunscreens to serums, find the best beauty products under ₹999 with verified reviews and ratings.',
     url: 'https://glowfinds.vercel.app',
     siteName: 'GlowFinds',
     images: [
       {
-        url: '/logo.png',
+        url: 'https://glowfinds.vercel.app/logo.png',
         width: 1200,
         height: 630,
       },
@@ -31,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GlowFinds - Best Budget Beauty Products in India | Affordable Skincare Under ₹999 (2026)',
+    title: 'Best Budget Skincare Products in India (Under ₹999) – GlowFinds',
     description: 'Discover affordable skincare picks for Indian skin. From sunscreens to serums, find the best beauty products under ₹999 with verified reviews and ratings.',
-    images: ['/logo.png'],
+    images: ['https://glowfinds.vercel.app/logo.png'],
   },
 }
 
@@ -69,9 +71,7 @@ export default function RootLayout({
       <head>
         <meta name="p:domain_verify" content="11bb36e1da088d0f6458abf06154be7d"/>
         <meta name="google-site-verification" content="VIVuAD4uv5CJv554NfIs9hAktdqx86lwHXhPoqweF7M" />
-        <link rel="icon" type="image/png" href="/logo.png" />
-        <link rel="apple-touch-icon" href="/logo.png" />
-        <link rel="shortcut icon" href="/logo.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
