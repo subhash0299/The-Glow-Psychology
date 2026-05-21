@@ -60,7 +60,7 @@ export default function ContactPage() {
             You can reach us at:
           </p>
           <div className="space-y-3">
-            
+            <a
               href="mailto:theglowpsychology@gmail.com"
               className="flex items-center gap-3 text-rose-600 hover:text-rose-700 font-medium"
             >
