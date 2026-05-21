@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Mail, Instagram, MessageCircle, Handshake } from 'lucide-react'
+import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact GlowFinds – Get in Touch',
@@ -42,6 +43,10 @@ export default function ContactPage() {
       </div>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+
+        {/* Contact Form */}
+        <ContactForm />
+
         <section className="mb-12">
           <p className="text-gray-700 leading-relaxed mb-6">
             If you have:
@@ -56,7 +61,7 @@ export default function ContactPage() {
             You can reach us at:
           </p>
           <div className="space-y-3">
-            <a
+            
               href="mailto:theglowpsychology@gmail.com"
               className="flex items-center gap-3 text-rose-600 hover:text-rose-700 font-medium"
             >
