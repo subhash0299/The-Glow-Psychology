@@ -64,7 +64,7 @@ const ContactForm = () => {
       <h2 className="text-2xl font-bold text-gray-900 mb-6">Send a Message</h2>
 
       {isSuccess && (
-        <div className="mb-6 p-4 bg-rose-50 text-rose-700 rounded-lg text-sm">
+        <div className="mb-6 p-4 bg-rose-50 text-green-700 rounded-lg text-sm">
           ✓ Your message has been sent! We&apos;ll get back to you soon.
         </div>
       )}
