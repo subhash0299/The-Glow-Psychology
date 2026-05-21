@@ -34,7 +34,7 @@ const ContactForm = () => {
           Accept: "application/json"
         },
         body: JSON.stringify({
-          access_key: "YOUR_GLOWFINDS_ACCESS_KEY", // create a new key on web3forms for this site
+          access_key: "f643976b-5c64-4205-bd13-b8645f47a12b", // create a new key on web3forms for this site
           "First Name": formData.firstName,
           "Last Name": formData.lastName,
           Email: formData.email,
