@@ -65,7 +65,7 @@ const ContactForm = () => {
 
       {isSuccess && (
         <div className="mb-6 p-4 bg-rose-50 text-rose-700 rounded-lg text-sm">
-          ✓ Your message has been sent! We'll get back to you soon.
+          ✓ Your message has been sent! We&apos;ll get back to you soon.
         </div>
       )}
 
