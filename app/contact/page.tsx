@@ -44,7 +44,6 @@ export default function ContactPage() {
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
 
-        {/* Contact Form */}
         <ContactForm />
 
         <section className="mb-12">
@@ -60,7 +59,7 @@ export default function ContactPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             You can reach us at:
           </p>
-<div className="space-y-3">
+          <div className="space-y-3">
             
               href="mailto:theglowpsychology@gmail.com"
               className="flex items-center gap-3 text-rose-600 hover:text-rose-700 font-medium"
@@ -78,7 +77,7 @@ export default function ContactPage() {
         <section className="mb-12">
           <h2 className="flex items-center gap-2 text-2xl font-bold text-gray-900 mb-4">
             <Handshake className="w-6 h-6 text-rose-600" />
-            Media & Collaboration
+            Media &amp; Collaboration
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             GlowFinds does not accept paid placements that influence product
