@@ -139,7 +139,7 @@ const ContactForm = () => {
           >
             <option value="" disabled>Select a subject</option>
             <option value="Product Question">Product Question</option>
-            <option value="Ingredient Correction">Ingredient Correction</option>
+            <option value="Ingredient Correction">Skin Care Guide</option>
             <option value="New Comparison Suggestion">New Comparison Suggestion</option>
             <option value="Collaboration">Collaboration</option>
             <option value="Other">Other</option>
